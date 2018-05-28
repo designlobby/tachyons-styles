@@ -1,0 +1,93 @@
+// variables
+
+@import "config/variables/media-queries";
+@import "config/variables/colours";
+@import "config/variables/base";
+// @import "config/variables/grid";
+// @import "config/variables/sizes";
+@import "config/variables/typography";
+// @import "config/variables/buttons";
+// @import "config/variables/navigation";
+// @import "config/variables/tables";
+// @import "config/variables/forms";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+// endbower
+
+// Manually injected npm/bower dependencies
+// @import "../../bower_components/tachyons-sass/tachyons.scss";
+// endbower
+
+@import "tachyons-sass/tachyons";
+
+// mixins
+
+// @import "config/mixins/aspect-ratio";
+// @import "config/mixins/buttons";
+
+// placeholders
+
+@import "config/placeholders/clearfix";
+// @import "config/placeholders/bg-image";
+// @import "config/placeholders/center";
+// @import "config/placeholders/shadow";
+
+// config
+
+@import "config/bem"; //https://medium.com/@marcmintel/pushing-bem-to-the-next-level-with-sass-3-4-5239d2371321#.s3dp11rmh
+// @import "config/grid"; // gridle.org/
+// @import "config/utilities";
+// @import "config/animations"; // https://css-tricks.com/snippets/css/keyframe-animation-syntax/
+
+// base
+
+// @import "base/normalize"; // github.com/necolas/normalize.css
+@import "base/accessibility";
+// @import "base/base"; // github.com/h5bp/html5-boilerplate
+// @import "base/box-sizing"; // https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+@import "base/typography";
+// @import "base/lists";
+// @import "base/tables";
+
+// layout
+
+// @import "layout/grid-structure"; // gridle.org/
+// @import "layout/spacing";
+
+// gravity forms // https://github.com/thatryan/gravity-forms-sass
+
+@import "forms/form-variables";
+@import "forms/form-mixins";
+@import "forms/form-default";
+@import "forms/form-gravity";
+@import "forms/form-placeholders";
+// @import "forms/form-checkboxes";
+@import "forms/form-captcha";
+
+// module
+
+@import "module/header";
+@import "module/main";
+@import "module/sidebar";
+@import "module/footer";
+
+@import "module/brand";
+@import "module/navigation";
+@import "module/toggle";
+// @import "module/buttons";
+@import "module/forms";
+@import "module/form-search";
+// @import "module/social";
+
+// vendor
+
+// @import "vendor/gravityforms";
+
+// helpers
+
+// @import "helpers/tinymce";
+// @import "helpers/wordpress";
+
+// @import "base/retina"; // https://gist.github.com/marcedwards/3446599
+@import "base/print"; // github.com/h5bp/html5-boilerplate

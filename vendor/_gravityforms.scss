@@ -1,0 +1,115 @@
+.gform_wrapper {
+
+  ul {
+    @extend .list-unstyled;
+    margin:24px 0;
+  }
+
+  li {
+    @extend .form-group;
+    padding:0;
+    &:before {content:"";}
+
+  }
+
+  form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .gfield_required {
+    padding-left: 1px;
+    color: $state-danger-text;
+  }
+
+}
+
+.ginput_container {
+
+  input,
+  select,
+  textarea {
+    @extend .form-control;
+  }
+
+  textarea {
+    height: auto;
+  }
+
+  select {
+    width:auto;
+  }
+
+  ul.gfield_radio {
+
+    li {
+      margin-bottom:8px;
+      &:first-child {margin-top:10px;}
+    }
+
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    position: relative;
+    display: inline-block;
+    margin: -3px 0 0;
+    margin-right:10px;
+    width:16px;
+    height:16px;
+    vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer;
+  }
+
+}
+
+.clear-multi {
+  @include clearfix;
+
+  .gfield_date_dropdown_day {display:block; margin-bottom:10px; width:auto;}
+  .gfield_date_dropdown_month {display:block; margin-bottom:10px; width:auto;}
+  .gfield_date_dropdown_year {display:block; width:auto;}
+
+  @include gridle_state ( mb ) {
+    .gfield_date_dropdown_day {display:inline-block; margin-right:10px; margin-bottom:0;}
+    .gfield_date_dropdown_month {display:inline-block; margin-right:10px; margin-bottom:0;}
+    .gfield_date_dropdown_year {display:inline-block;}
+  }
+}
+
+.gform_button {
+@extend .btn;
+@extend .btn-brand-primary;
+}
+
+.gform_wrapper .gfield_error {
+
+.gfield_label {
+color: $state-danger-text;
+
+  label {
+    font-size:$font-size-base;
+  }
+
+}
+
+input,
+select,
+textarea {
+border-color: $alert-danger-border;
+background-color: $alert-danger-bg;
+color: $alert-danger-text;
+@include form-control-focus( $alert-danger-text );
+}
+}
+
+.validation_error {
+@extend .alert;
+@extend .alert-danger;
+}
+
+#gforms_confirmation_message {
+@extend .alert;
+@extend .alert-success;
+}

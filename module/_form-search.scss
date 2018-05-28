@@ -1,0 +1,33 @@
+// Search form
+
+.search-form {
+  display: flex;
+  margin-bottom: 3rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.search-form .screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+ }
+
+.search-form .search-field {
+  width: 100%;
+ }
+
+.search-form .search-submit {
+  @extend .link;
+  padding: .75rem 1rem;
+  font-size: .875rem;
+  background: $brand-primary;
+  border: none;
+
+  &:hover {
+    background: $brand-primary;
+  }
+}

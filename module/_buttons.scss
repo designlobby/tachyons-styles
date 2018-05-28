@@ -1,0 +1,174 @@
+@include b(btn) {
+
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: $btn-border-width solid transparent;
+
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  text-align: center;
+  text-transform: $btn-text-transform;
+
+  white-space: nowrap;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius);
+  transition: all .2s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+  }
+
+  @include m(btn-lg) {
+
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-border-radius-lg);
+
+  }
+
+  @include m(btn-sm) {
+
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-border-radius-sm);
+
+  }
+
+  // button styles
+
+  @include m(btn-primary) {
+
+    @include button-variant($btn-brand-primary-color, $btn-brand-primary-bg, $btn-brand-primary-border);
+
+  }
+
+  @include m(btn-secondary) {
+
+    @include button-variant($btn-brand-secondary-color, $btn-brand-secondary-bg, $btn-brand-secondary-border);
+
+  }
+
+  @include m(btn-tertiary) {
+
+    @include button-variant($btn-brand-tertiary-color, $btn-brand-tertiary-bg, $btn-brand-tertiary-border);
+
+  }
+
+  @include m(btn-white) {
+
+    @include button-variant($btn-white-color, $btn-white-bg, $btn-white-border);
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: $white;
+      background-color: $brand-tertiary;
+      border-color: $brand-tertiary;
+
+    }
+
+  }
+
+  @include m(btn-black) {
+
+    @include button-variant($btn-black-color, $btn-black-bg, $btn-black-border);
+
+  }
+
+  @include m(btn-success) {
+
+    @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+
+  }
+
+  @include m(btn-info) {
+
+    @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+
+  }
+
+  @include m(btn-warning) {
+
+    @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+
+  }
+
+  @include m(btn-danger) {
+
+    @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+
+  }
+
+
+  // outline button styles
+
+  @include m(btn-outline-primary) {
+
+    @include button-outline-variant($btn-brand-primary-bg);
+
+  }
+
+  @include m(btn-outline-secondary) {
+
+    @include button-outline-variant($btn-brand-secondary-bg);
+
+  }
+
+  @include m(btn-outline-tertiary) {
+
+    @include button-outline-variant($btn-brand-tertiary-bg);
+
+  }
+
+  @include m(btn-outline-white) {
+
+    @include button-outline-variant($btn-white-bg);
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: $btn-brand-primary-bg;
+
+    }
+
+  }
+
+  @include m(btn-outline-black) {
+
+    @include button-outline-variant($btn-black-bg);
+
+  }
+
+  @include m(btn-outline-success) {
+
+    @include button-outline-variant($btn-success-bg);
+
+  }
+
+  @include m(btn-outline-info) {
+
+    @include button-outline-variant($btn-info-bg);
+
+  }
+
+  @include m(btn-outline-warning) {
+
+    @include button-outline-variant($btn-warning-bg);
+
+  }
+
+  @include m(btn-outline-danger) {
+
+    @include button-outline-variant($btn-danger-bg);
+
+  }
+
+}

@@ -1,0 +1,124 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $form-font-family;
+}
+
+label {
+  font-size: $input-label-font-size;
+  color: $input-label-color;
+  font-weight: $input-label-font-weight;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="file"],
+textarea,
+select {
+  @include form-spacing(padding, $form-space);
+  display: block;
+  width: 100%;
+  background: $input-bg;
+  border: 1px solid $input-border;
+  font-size: $input-font-size;
+  color: $input-color;
+  line-height: normal;
+  font-weight: $input-font-weight;
+  box-shadow: $input-shadow;
+  transition: $input-transition;
+
+  &:focus {
+    border-color: $input-border-focus;
+    outline: none;
+  }
+}
+
+input[type="file"] {
+  &:hover { cursor: pointer; }
+}
+
+input[type="search"] {
+  width: auto;
+  display: inline-block;
+}
+
+select {
+  height: ceil($form-line-height * 1.33);
+}
+
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  display: inline-block;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+
+  // @extend .btn;
+  // @extend .btn--btn-primary;
+
+}
+
+// WebKit-style focus
+// @link https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/mixins/_tab-focus.scss [props]
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  &:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+}
+
+
+/* field label placement overrides */
+
+.gform_wrapper .hidden_label .gfield_label {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.gfield.right_label,
+.gfield.left_label {
+  padding-top: 10px;
+}
+
+.gform_wrapper li.hidden_label input {
+  margin-top: 12px;
+}
+
+.gform_wrapper .field_sublabel_hidden_label .ginput_complex.ginput_container input[type=text],
+.gform_wrapper .field_sublabel_hidden_label .ginput_complex.ginput_container select {
+  margin-bottom: 12px;
+}
+
+.gform_wrapper label.screen-reader-text, .gform_wrapper label.hidden_sub_label {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+ }
+ 

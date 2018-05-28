@@ -1,0 +1,13 @@
+// common
+
+.wrap {
+  width: 100%;
+}
+
+.gr-1col {
+  @include gridle ( 22 prefix 1 suffix 1 tb 24 prefix 0 suffix 0 );
+}
+
+.gr-2col {
+  @include gridle ( 22 prefix 1 suffix 1 tb 12 prefix 0 suffix 0 );
+}

@@ -1,0 +1,60 @@
+// buttons
+
+$btn-font-weight:               normal !default;
+$btn-line-height:               1.25 !default;
+$btn-text-transform:            uppercase !default;
+$btn-border-width:              $border-width !default;
+$btn-default-color:             $white !default;
+
+// button variant
+
+$btn-brand-primary-color:       $white !default;
+$btn-brand-primary-bg:          $brand-primary !default;
+$btn-brand-primary-border:      $btn-brand-primary-bg !default;
+
+$btn-brand-secondary-color:     $white !default;
+$btn-brand-secondary-bg:        $brand-secondary !default;
+$btn-brand-secondary-border:    $brand-secondary !default;
+
+$btn-brand-tertiary-color:      $white !default;
+$btn-brand-tertiary-bg:         $brand-tertiary !default;
+$btn-brand-tertiary-border:     $brand-tertiary !default;
+
+$btn-white-color:               $brand-primary !default;
+$btn-white-bg:                  $white !default;
+$btn-white-border:              $white !default;
+
+$btn-black-color:               $white !default;
+$btn-black-bg:                  $black !default;
+$btn-black-border:              $black !default;
+
+$btn-info-color:                $white !default;
+$btn-info-bg:                   $brand-info !default;
+$btn-info-border:               $btn-info-bg !default;
+
+$btn-success-color:             $white !default;
+$btn-success-bg:                $brand-success !default;
+$btn-success-border:            $btn-success-bg !default;
+
+$btn-warning-color:             $white !default;
+$btn-warning-bg:                $brand-warning !default;
+$btn-warning-border:            $btn-warning-bg !default;
+
+$btn-danger-color:              $white !default;
+$btn-danger-bg:                 $brand-danger !default;
+$btn-danger-border:             $btn-danger-bg !default;
+
+// button sizes
+
+$btn-padding-x:                 1rem !default;
+$btn-padding-y:                 .5rem !default;
+
+$btn-padding-x-sm:              .5rem !default;
+$btn-padding-y-sm:              .25rem !default;
+
+$btn-padding-x-lg:              1.5rem !default;
+$btn-padding-y-lg:              .75rem !default;
+
+$btn-border-radius:             $border-radius !default;
+$btn-border-radius-lg:          $border-radius-lg !default;
+$btn-border-radius-sm:          $border-radius-sm !default;

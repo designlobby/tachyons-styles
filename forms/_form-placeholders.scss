@@ -1,0 +1,39 @@
+// placeholders
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $text-color;
+  transition: opacity 250ms ease-in-out;
+}
+:focus::-webkit-input-placeholder {
+  opacity: .25;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $text-color;
+  transition: opacity 250ms ease-in-out;
+}
+:focus:-ms-input-placeholder {
+  opacity: .25;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $text-color;
+  opacity: .5;
+  transition: opacity 250ms ease-in-out;
+}
+:focus::-moz-placeholder {
+  opacity: .25;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: $text-color;
+  opacity: .5;
+  transition: opacity 250ms ease-in-out;
+}
+:focus:-moz-placeholder {
+  opacity: .25;
+}
+
+// responsive placeholder text
+// add elipses on overflow
+
+input[placeholder] { text-overflow: ellipsis; }
+::-moz-placeholder { text-overflow: ellipsis; } /* firefox 19+ */
+input:-moz-placeholder { text-overflow: ellipsis; }

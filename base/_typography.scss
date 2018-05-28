@@ -1,0 +1,83 @@
+.sans-serif {
+  font-family: $font-family-sans-serif;
+}
+
+.serif {
+  font-family: $font-family-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+time {
+  font-family: $font-family-sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-bold;
+  line-height: 1.5;
+  color: $headings-font-color;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.5;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: $brand-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($brand-primary, 15%);
+  }
+}
+
+strong,
+.strong {
+  font-weight: $font-weight-bold;
+}
+
+small,
+.small {
+  font-size: $font-size-sm;
+}
+
+ul,
+ol {
+  margin: 0;
+  margin-bottom: 1rem;
+
+  li {
+    padding-left: .25rem;
+    margin-bottom: .5rem;
+    line-height: 1.5;
+  }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul li {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+}

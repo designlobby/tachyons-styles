@@ -1,0 +1,47 @@
+.gfield {
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="file"],
+select {
+  border-radius: 0;
+}
+
+textarea {
+  border-radius: 0rem;
+}
+
+.name_first {
+  display: block;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+  float: none;
+
+  @media #{$breakpoint-large} {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 0;
+  }
+}
+
+.name_last {
+
+  width: 100%;
+  float: none;
+  margin: 0;
+
+  @media #{$breakpoint-large} {
+    width: 49%;
+    float: left;
+    margin-right: 0;
+  }
+}

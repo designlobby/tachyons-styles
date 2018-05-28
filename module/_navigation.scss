@@ -1,0 +1,145 @@
+// Navigation
+
+ul.nav-primary {
+  padding: 0;
+  padding-top: .875rem;
+  font-size: 0;
+  list-style: none;
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      padding: .5rem;
+      font-size: .875rem;
+      font-weight: 700;
+      color: $brand-primary;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color .15s ease-in;
+
+      &:hover,
+      &:focus,
+      &:link,
+      &:visited,
+      &:active {
+        transition: color .15s ease-in;
+      }
+
+      &:hover,
+      &:focus,
+      &:visited,
+      &:active {
+        color: $brand-primary;
+      }
+
+      &:focus {
+        outline: 1px dotted currentColor;
+      }
+    }
+  }
+}
+
+// <li class="dib">
+// <a href="#donate" class="dib ph4 pv3 small fw7 lh-solid black ttu bg-brand-yellow hover-bg-yellow bg-animate br-pill shadow-3 shadow-hover link">
+// Donate
+// </a>
+// </li>
+
+
+// Responsive Dropdown Navigation Bar
+// https://gist.github.com/taniarascia/56893ff29f64038dca91
+
+// $breakpoint: 60em;
+// $nav-background: #262626;
+// $nav-font-color: #ffffff;
+// $link-hover-color: #2581DC;
+
+// ul.nav-primary {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+//   li {
+//     float: left;
+//     position: relative;
+//     a {
+//       display: block;
+//       padding: 0 20px;
+//       line-height: $nav-height;
+//       background: $nav-background;
+//       color: $nav-font-color;
+//       text-decoration: none;
+//       &:hover {
+//         background: $link-hover-color;
+//         color: $nav-font-color;
+//       }
+//       &:not(:only-child):after {
+//       padding-left: 4px;
+//       content: ' ▾';
+//       }
+//     }
+//     ul li {
+//       min-width: 190px;
+//       & a {
+//         padding: 15px;
+//         line-height: 20px;
+//         z-index: 1;
+//       }
+//     }
+//   }
+// }
+
+// .nav-dropdown {
+//   position: absolute;
+//   display: none;
+//   z-index: 1;
+//   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+// }
+
+@media only screen and (max-width: $breakpoint-l) {
+  ul.nav-primary {
+    display: none;
+    padding-top: 1.5rem;
+
+    li {
+      display: block;
+      margin: 0;
+
+      a {
+        display: block;
+        padding: 1rem;
+        background-color: $brand-primary;
+
+        &:hover {
+          color: $brand-primary;
+          background-color: $white;
+        }
+      }
+    }
+
+    .special {
+      a {
+        display: block;
+        padding: 1rem;
+        margin-top: .5rem;
+        border-radius: 0;
+      }
+    }
+  }
+
+  // .nav-dropdown {
+  //   position: static;
+  // }
+}
+
+@media screen and (min-width: $breakpoint-l) {
+  .nav-primary {
+    display: block !important;
+  }
+}
