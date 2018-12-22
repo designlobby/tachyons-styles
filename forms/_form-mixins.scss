@@ -15,9 +15,9 @@
 // @include form-clearfix;
 @mixin form-clearfix {
   &::after {
+    display: table;
     clear: both;
     content: '';
-    display: table;
   }
 }
 

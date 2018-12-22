@@ -1,0 +1,17 @@
+@include b(brand) {
+  transition: width .8s, height .8s;
+
+  @include m(header) {
+    width: 64px;
+    height: auto;
+
+    @media #{$breakpoint-not-small} {
+      width: 64px;
+    }
+  }
+
+  @include m(footer) {
+    width: 256px;
+    height: auto;
+  }
+}

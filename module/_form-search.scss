@@ -2,32 +2,39 @@
 
 .search-form {
   display: flex;
-  margin-bottom: 3rem;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 3rem;
 
+  .screen-reader-text {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  .search-field {
+    width: 100%;
+  }
+
+  .search-submit {
+    @extend .link;
+    padding: .75rem 1rem;
+    font-size: .875rem;
+    background: $brand-primary;
+    border: none;
+
+    &:hover {
+      background: $brand-primary;
+    }
+  }
 }
 
 .search-form .screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
-  height: 1px;
   width: 1px;
+  height: 1px;
   overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
  }
-
-.search-form .search-field {
-  width: 100%;
- }
-
-.search-form .search-submit {
-  @extend .link;
-  padding: .75rem 1rem;
-  font-size: .875rem;
-  background: $brand-primary;
-  border: none;
-
-  &:hover {
-    background: $brand-primary;
-  }
-}

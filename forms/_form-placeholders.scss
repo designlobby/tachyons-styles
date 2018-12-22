@@ -34,6 +34,14 @@
 // responsive placeholder text
 // add elipses on overflow
 
-input[placeholder] { text-overflow: ellipsis; }
-::-moz-placeholder { text-overflow: ellipsis; } /* firefox 19+ */
-input:-moz-placeholder { text-overflow: ellipsis; }
+input[placeholder] {
+  text-overflow: ellipsis;
+}
+
+::-moz-placeholder {
+  text-overflow: ellipsis; // firefox 19+
+}
+
+input:-moz-placeholder {
+  text-overflow: ellipsis;
+}

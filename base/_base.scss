@@ -1,81 +1,12 @@
-html {
-  // font-size: $font-size-root;
-  -ms-overflow-style: scrollbar; // See https://github.com/twbs/bootstrap/issues/18543
-  -webkit-tap-highlight-color: rgba(0,0,0,0); // Changes the default tap highlight to be completely transparent in iOS.
-}
-
-body {
-  // background-color: $body-bg-color;
-  // font-family: $font-family-base;
-  // font-size: $font-size-base;
-  // line-height: $line-height-base;
-  // color: $body-text-color;
-  overflow-x: hidden !important;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+// Highlight text
 
 ::selection {
-  background: $brand-primary;
   color: $white;
   text-shadow: none;
+  background: $brand-primary;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-// hr {
-//   display: block;
-//   height: $hr-border-width;
-//   border: 0;
-//   border-top: $hr-border-width solid $hr-border-color;
-//   margin: $spacer 0;
-//   padding: 0;
-// }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/*
- * Responsive images by default
- */
+// Responsive images by default
 
 img {
   height: auto;

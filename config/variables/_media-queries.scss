@@ -1,9 +1,9 @@
 // media queries for reference
 
-$breakpoint-ns: 480px; // 480px
-$breakpoint-t: 768px; // 768px
-$breakpoint-m: 960px; // 960px
-$breakpoint-l: 1200px; // 1200px
+$breakpoint-ns: 480px;
+$breakpoint-t: 768px;
+$breakpoint-m: 960px;
+$breakpoint-l: 1200px;
 
 // media queries
 
@@ -11,7 +11,6 @@ $breakpoint-not-small: 'screen and (min-width: 480px)' !default;
 $breakpoint-tablet: 'screen and (min-width: 768px)' !default;
 $breakpoint-medium: 'screen and (min-width: 960px)' !default;
 $breakpoint-large: 'screen and (min-width: 1200px)' !default;
-
 
 // media query example
 

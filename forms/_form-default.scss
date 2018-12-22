@@ -25,12 +25,12 @@ select {
   @include form-spacing(padding, $form-space);
   display: block;
   width: 100%;
+  font-size: $input-font-size;
+  font-weight: $input-font-weight;
+  line-height: normal;
+  color: $input-color;
   background: $input-bg;
   border: 1px solid $input-border;
-  font-size: $input-font-size;
-  color: $input-color;
-  line-height: normal;
-  font-weight: $input-font-weight;
   box-shadow: $input-shadow;
   transition: $input-transition;
 
@@ -45,8 +45,8 @@ input[type="file"] {
 }
 
 input[type="search"] {
-  width: auto;
   display: inline-block;
+  width: auto;
 }
 
 select {
@@ -60,8 +60,8 @@ select[size] {
 
 input[type="checkbox"],
 input[type="radio"] {
-  width: auto;
   display: inline-block;
+  width: auto;
 }
 
 input[type="submit"],
@@ -89,8 +89,7 @@ button {
   }
 }
 
-
-/* field label placement overrides */
+// field label placement overrides
 
 .gform_wrapper .hidden_label .gfield_label {
   clip: rect(1px, 1px, 1px, 1px);
@@ -115,10 +114,9 @@ button {
 }
 
 .gform_wrapper label.screen-reader-text, .gform_wrapper label.hidden_sub_label {
-  clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
-  height: 1px;
   width: 1px;
+  height: 1px;
   overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
  }
- 
