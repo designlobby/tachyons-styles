@@ -1,5 +1,3 @@
-<?php
-
 // <header class="w-100 center cf">
 //   <div class="cf">
 //     <a class="dib dn-m brand brand--header" href="{{ home_url('/') }}" title="{{ get_bloginfo('name', 'display') }}">
@@ -18,6 +16,8 @@
 
 
 
+// <?php
+//
 // /***************************************************************
 //  * Add class to li items -
 //  * https://wordpress.stackexchange.com/questions/245503/add-a-custom-class-to-nav-li-item
@@ -140,7 +140,7 @@
         height: 60px;
         padding: 0;
         margin: 0 auto;
-        background: url('../images/svg/brand.svg'); // keep styles inside brand.svg for bg images
+        // background: url('../images/svg/brand.svg'); // keep styles inside brand.svg for bg images
         background-size: 200.294px 72px;
 
         // Cant use @extend .ir inside mediaquery so...;
