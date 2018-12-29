@@ -1,145 +1,189 @@
-// Navigation
+<?php
 
-ul.nav-primary {
-  padding: 0;
-  padding-top: .875rem;
-  font-size: 0;
-  list-style: none;
-  list-style-type: none;
+// <header class="w-100 center cf">
+//   <div class="cf">
+//     <a class="dib dn-m brand brand--header" href="{{ home_url('/') }}" title="{{ get_bloginfo('name', 'display') }}">
+//       @svg('brand-mark')
+//     </a>
+//     <div class="relative fr db dn-m nav-mobile">
+//       <a id="nav-toggle" href="#!"><span></span></a>
+//     </div>
+//   </div>
+//   <nav class="nav-primary">
+//     @if (has_nav_menu('primary_navigation'))
+//       {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'dn flex-m flex-row flex-nowrap w-100 pa0 ma0 list primary-navigation']) !!}
+//     @endif
+//   </nav>
+// </header>
+
+
+
+// /***************************************************************
+//  * Add class to li items -
+//  * https://wordpress.stackexchange.com/questions/245503/add-a-custom-class-to-nav-li-item
+// ***************************************************************/
+
+// // add_filter( 'nav_menu_css_class', 'dl_menu_item_classes', 10, 4 );
+
+// // function dl_menu_item_classes( $classes, $item, $args, $depth ) {
+// //     // unset($classes);
+// //     $classes[] = 'relative flex-auto ma0 pa0 tc';
+// //     return $classes;
+// // }
+
+
+
+.primary-navigation {
 
   li {
-    display: inline-block;
-    margin-right: 1rem;
 
-    &:last-child {
-      margin-right: 0;
+    a,
+    a:visited {
+      display: block;
+      padding: 1rem;
+      font-family: $font-family-sans-serif;
+      font-size: 1rem;
+      font-weight: $font-weight-bold;
+      color: $dark-gray;
+      text-decoration: none;
+      background-color: $brand-primary;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $white;
+        background-color: $brand-secondary;
+        outline: 0 dotted currentColor;
+      }
+
+      // dropdown arrow
+      &:not(:only-child):after {
+        padding-left: 4px;
+        content: ' ▾';
+      }
     }
 
+    // Dropdown list binds to JS toggle event
+    .sub-menu {
+      position: static;
+      z-index: 1;
+      display: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+      a {
+        line-height: 2;
+        color: $white;
+        background-color: $brand-secondary;
+      }
+    }
+  }
+
+  .active {
     a {
-      padding: .5rem;
-      font-size: .875rem;
-      font-weight: 700;
-      color: $brand-primary;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: color .15s ease-in;
-
-      &:hover,
-      &:focus,
-      &:link,
-      &:visited,
-      &:active {
-        transition: color .15s ease-in;
-      }
-
-      &:hover,
-      &:focus,
-      &:visited,
-      &:active {
-        color: $brand-primary;
-      }
-
-      &:focus {
-        outline: 1px dotted currentColor;
-      }
+      color: $white;
+      background-color: $brand-secondary;
     }
   }
 }
 
-// <li class="dib">
-// <a href="#donate" class="dib ph4 pv3 small fw7 lh-solid black ttu bg-brand-yellow hover-bg-yellow bg-animate br-pill shadow-3 shadow-hover link">
-// Donate
-// </a>
-// </li>
+@media #{$breakpoint-medium} {
 
-
-// Responsive Dropdown Navigation Bar
-// https://gist.github.com/taniarascia/56893ff29f64038dca91
-
-// $breakpoint: 60em;
-// $nav-background: #262626;
-// $nav-font-color: #ffffff;
-// $link-hover-color: #2581DC;
-
-// ul.nav-primary {
-//   list-style: none;
-//   margin: 0;
-//   padding: 0;
-//   li {
-//     float: left;
-//     position: relative;
-//     a {
-//       display: block;
-//       padding: 0 20px;
-//       line-height: $nav-height;
-//       background: $nav-background;
-//       color: $nav-font-color;
-//       text-decoration: none;
-//       &:hover {
-//         background: $link-hover-color;
-//         color: $nav-font-color;
-//       }
-//       &:not(:only-child):after {
-//       padding-left: 4px;
-//       content: ' ▾';
-//       }
-//     }
-//     ul li {
-//       min-width: 190px;
-//       & a {
-//         padding: 15px;
-//         line-height: 20px;
-//         z-index: 1;
-//       }
-//     }
-//   }
-// }
-
-// .nav-dropdown {
-//   position: absolute;
-//   display: none;
-//   z-index: 1;
-//   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-// }
-
-@media only screen and (max-width: $breakpoint-l) {
-  ul.nav-primary {
-    display: none;
-    padding-top: 1.5rem;
+  .primary-navigation {
+    display: flex !important; // required to reset nav on browser resize
 
     li {
-      display: block;
-      margin: 0;
+      width: 14.286%;
 
-      a {
-        display: block;
-        padding: 1rem;
-        background-color: $brand-primary;
+      a,
+      a:visited {
+        padding: 0;
+        line-height: 72px;
+      }
 
-        &:hover {
-          color: $brand-primary;
-          background-color: $white;
+      &:nth-of-type(1) { order: 4; }
+      &:nth-of-type(2) { order: 1; }
+      &:nth-of-type(3) { order: 2; }
+      &:nth-of-type(4) { order: 3; }
+      &:nth-of-type(5) { order: 5; }
+      &:nth-of-type(6) { order: 6; }
+      &:nth-of-type(7) { order: 7; }
+
+      // Dropdown list binds to JS toggle event
+      .sub-menu {
+        position: absolute;
+
+        li {
+          min-width: 200px;
+
+          a {
+            line-height: 72px;
+          }
         }
       }
     }
 
-    .special {
-      a {
+    .menu-cheshire-joinery {
+      display: flex;
+      width: 200.294px;
+      min-width: 200.294px;
+      max-width: 200.294px;
+      transition: width .8s, height .8s;
+
+      .menu-cheshire-joinery__brand {
+        // .ir injected via js - add @extend .ir; here.
+        // @extend .ir;
+
         display: block;
-        padding: 1rem;
-        margin-top: .5rem;
-        border-radius: 0;
+        width: 180px;
+        height: 60px;
+        padding: 0;
+        margin: 0 auto;
+        background: url('../images/svg/brand.svg'); // keep styles inside brand.svg for bg images
+        background-size: 200.294px 72px;
+
+        // Cant use @extend .ir inside mediaquery so...;
+        font: 0/0 a;
+        text-shadow: none;
+        color: transparent;
+        background-color: transparent;
+        border: 0;
       }
     }
   }
-
-  // .nav-dropdown {
-  //   position: static;
-  // }
 }
 
-@media screen and (min-width: $breakpoint-l) {
-  .nav-primary {
-    display: block !important;
-  }
-}
+
+
+// // Responsive Dropdown Navigation Bar
+// // https://gist.github.com/taniarascia/56893ff29f64038dca91
+// // If a link has a dropdown, add sub menu toggle.
+// // Responsive Dropdown Navigation Bar
+// // https://gist.github.com/taniarascia/56893ff29f64038dca91
+// // If a link has a dropdown, add sub menu toggle.
+// $('.nav-primary ul li a:not(:only-child)').click(function(e) {
+//   $(this).siblings('.sub-menu').toggle();
+//   // Close one dropdown when selecting another
+//   $('.sub-menu').not($(this).siblings()).hide();
+//   e.stopPropagation();
+// });
+// // Clicking away from dropdown will remove the dropdown class
+// $('html').click(function() {
+//   $('.sub-menu').hide();
+// });
+// // Clicking a link closes the menu - page scroll
+// // $('nav ul li a').click(function() {
+// //   $('nav ul').slideToggle();
+// // });
+// // Toggle open and close nav styles on click
+// $('#nav-toggle').click(function() {
+//   $('.nav-primary ul').slideToggle();
+// });
+// // Hamburger to X toggle
+// $('#nav-toggle').on('click', function() {
+//   this.classList.toggle('active');
+// });
+
+// // Add .brand--nav
+// $('ul li.menu-cheshire-joinery').find('a').addClass('menu-cheshire-joinery__brand');

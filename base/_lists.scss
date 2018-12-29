@@ -10,9 +10,9 @@ ol {
   }
 }
 
-// Coloured bullets
+// Decorated-list
 
-ul {
+@include b(decorated-list) {
   list-style: none;
 
   li {

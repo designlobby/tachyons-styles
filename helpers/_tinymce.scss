@@ -1,15 +1,21 @@
 body#tinymce {
+  height: auto !important;
   margin: 12px !important;
-  height:auto !important;
 }
 
 body.mceContentBody {
   height:auto !important;
+  text-align: left;
   background-color:#FFFFFF !important;
   background-image: none;
-  text-align: left;
 
-  h1, h2, h3, h4, h5, h6, p {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
 
     font-family: $font-family-base;
     font-size: $font-size-base;
