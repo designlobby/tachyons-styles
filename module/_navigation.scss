@@ -23,59 +23,74 @@
 //  * https://wordpress.stackexchange.com/questions/245503/add-a-custom-class-to-nav-li-item
 // ***************************************************************/
 
-// // add_filter( 'nav_menu_css_class', 'dl_menu_item_classes', 10, 4 );
+// add_filter( 'nav_menu_css_class', 'dl_menu_item_classes', 10, 4 );
 
-// // function dl_menu_item_classes( $classes, $item, $args, $depth ) {
-// //     // unset($classes);
-// //     $classes[] = 'relative flex-auto ma0 pa0 tc';
-// //     return $classes;
-// // }
+// function dl_menu_item_classes( $classes, $item, $args, $depth ) {
+//     // unset($classes);
+//     // $classes[] = 'relative flex flex-auto ma0 pa2-m pb0-m tc';
+//     // return $classes;
+
+//     if ( 'primary_navigation' === $args->theme_location ) {
+//         $classes[] = 'relative dib ma0 pa2-m pb0-m tc';
+//     }
+//     elseif ( 'language_navigation' === $args->theme_location ) {
+//         $classes[] = 'dib pa1 ma0';
+//     }
+
+//     return $classes;
+// }
+
 
 
 
 .primary-navigation {
 
-  li {
+  a,
+  a:visited {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-family: $nav-font-family;
+    font-size: $nav-font-size;
+    font-weight: $font-weight-bold;
+    color: $nav-font-color;
+    text-decoration: none;
+    background-color: $nav-bg-color;
 
-    a,
-    a:visited {
-      display: block;
-      padding: 1rem;
-      font-family: $font-family-sans-serif;
-      font-size: 1rem;
-      font-weight: $font-weight-bold;
-      color: $dark-gray;
-      text-decoration: none;
-      background-color: $brand-primary;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $nav-font-hover-color;
+      background-color: $nav-bg-hover-color;
+      outline: 0 dotted currentColor;
+    }
+
+    // dropdown arrow
+    &:not(:only-child):after {
+      padding-left: 4px;
+      content: ' ▾';
+    }
+  }
+
+  // Dropdown list binds to JS toggle event
+  .sub-menu {
+    position: static;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    a {
+      line-height: 2;
+      color: $nav-dd-font-color;
+      background-color: $nav-dd-bg-color;
 
       &:hover,
       &:focus,
       &:active {
-        color: $white;
-        background-color: $brand-secondary;
-        outline: 0 dotted currentColor;
-      }
-
-      // dropdown arrow
-      &:not(:only-child):after {
-        padding-left: 4px;
-        content: ' ▾';
-      }
-    }
-
-    // Dropdown list binds to JS toggle event
-    .sub-menu {
-      position: static;
-      z-index: 1;
-      display: none;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-
-      a {
-        line-height: 2;
-        color: $white;
-        background-color: $brand-secondary;
+        color: $nav-dd-font-hover-color;
+        background-color: $nav-dd-bg-hover-color;
       }
     }
   }
@@ -93,66 +108,23 @@
   .primary-navigation {
     display: flex !important; // required to reset nav on browser resize
 
-    li {
-      width: 14.286%;
-
-      a,
-      a:visited {
-        padding: 0;
-        line-height: 72px;
-      }
-
-      &:nth-of-type(1) { order: 4; }
-      &:nth-of-type(2) { order: 1; }
-      &:nth-of-type(3) { order: 2; }
-      &:nth-of-type(4) { order: 3; }
-      &:nth-of-type(5) { order: 5; }
-      &:nth-of-type(6) { order: 6; }
-      &:nth-of-type(7) { order: 7; }
-
-      // Dropdown list binds to JS toggle event
-      .sub-menu {
-        position: absolute;
-
-        li {
-          min-width: 200px;
-
-          a {
-            line-height: 72px;
-          }
-        }
-      }
+    a,
+    a:visited {
+      padding: 0;
+      line-height: 1;
     }
 
-    .menu-cheshire-joinery {
-      display: flex;
-      width: 200.294px;
-      min-width: 200.294px;
-      max-width: 200.294px;
-      transition: width .8s, height .8s;
+    // Dropdown list binds to JS toggle event
+    .sub-menu {
+      position: absolute;
 
-      .menu-cheshire-joinery__brand {
-        // .ir injected via js - add @extend .ir; here.
-        // @extend .ir;
-
-        display: block;
-        width: 180px;
-        height: 60px;
-        padding: 0;
-        margin: 0 auto;
-        // background: url('../images/svg/brand.svg'); // keep styles inside brand.svg for bg images
-        background-size: 200.294px 72px;
-
-        // Cant use @extend .ir inside mediaquery so...;
-        font: 0/0 a;
-        text-shadow: none;
-        color: transparent;
-        background-color: transparent;
-        border: 0;
+      li {
+        min-width: 200px;
       }
     }
   }
 }
+
 
 
 

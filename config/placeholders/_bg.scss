@@ -1,0 +1,57 @@
+// background images
+//
+// @extend %placeholder;
+
+// body background image
+
+%body-bg-image,
+.body-bg-image {
+
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+
+  /* lt ie8 */
+  -ms-background-position-x: center;
+  -ms-background-position-y: center;
+  background-position: center center;
+
+  /* scale bg image proportionately */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
+  -ms-behavior: url(/backgroundsize.min.htc);
+  /* prevent scaling past src width (or not) */
+  /* max-width: 1200px; */
+
+}
+
+// div background image
+
+%div-bg-image,
+.div-bg-image {
+
+  position:relative;
+  background-position: center center;
+  background-repeat:no-repeat;
+
+  /* lt ie8 */
+  -ms-background-position-x: center;
+  -ms-background-position-y: center;
+  background-position: center center;
+
+  /* scale bg image proportionately */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
+  -ms-behavior: url(/backgroundsize.min.htc);
+  /* prevent scaling past src width (or not) */
+  /* max-width: 1200px; */
+
+}

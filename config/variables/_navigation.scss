@@ -2,13 +2,15 @@
 
 $nav-font-family:               inherit !default;
 $nav-font-size:                 $font-size-base !default;
-$nav-font-hover-color:          $brand-primary !default;
+$nav-font-color:                $brand-primary !default;
+$nav-font-hover-color:          $brand-secondary !default;
 $nav-font-weight:               $font-weight-bold !default;
 $nav-bg-color:                  $white !default;
-$nav-bg-hover-color:            $grey-lighter !default;
+$nav-bg-hover-color:            $white !default;
 
 $nav-dd-font-size:              $font-size-sm !default;
-$nav-dd-font-hover-color:       $brand-primary !default;
+$nav-dd-font-color:             $brand-primary !default;
+$nav-dd-font-hover-color:       $brand-secondary !default;
 $nav-dd-bg-color:               $white !default;
-$nav-dd-bg-hover-color:         $body-bg-color !default;
-$nav-dd-border-bottom:          $border-width solid $grey-lighter;
+$nav-dd-bg-hover-color:         $white !default;
+$nav-dd-border-bottom:          1px solid $white;

@@ -1,7 +1,6 @@
 @include b(social-menu) {
 
   @include e(item) {
-    margin-right: .25rem;
     &:last-child {margin-right: 0;}
 
     a {
@@ -16,46 +15,46 @@
 
 <ul class="pa0 ma0 mb3 social-menu">
   <?php if(get_field('social_facebook_url', 'option') ): ?>
-    <li class="dib v-mid social-menu__item">
+    <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
       <a href="<?php the_field('social_facebook_url', 'option') ?>" target="_blank" class="db facebook">
         <?php
-          echo file_get_contents(get_template_directory_uri() . '/templates/svg/icon-facebook.svg');
+          echo file_get_contents(get_template_directory_uri() . '/svg/icon-facebook.svg');
         ?>
       </a>
     </li>
   <?php endif; ?>
   <?php if(get_field('social_twitter_url', 'option') ): ?>
-    <li class="dib v-mid social-menu__item">
+    <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
       <a href="<?php the_field('social_twitter_url', 'option') ?>" target="_blank" class="db twitter">
         <?php
-          echo file_get_contents(get_template_directory_uri() . '/templates/svg/icon-twitter.svg');
+          echo file_get_contents(get_template_directory_uri() . '/svg/icon-twitter.svg');
         ?>
       </a>
     </li>
   <?php endif; ?>
   <?php if(get_field('social_instagram_url', 'option') ): ?>
-    <li class="dib v-mid social-menu__item">
+    <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
       <a href="<?php the_field('social_instagram_url', 'option') ?>" target="_blank" class="db">
         <?php
-          echo file_get_contents(get_template_directory_uri() . '/templates/svg/icon-instagram.svg');
+          echo file_get_contents(get_template_directory_uri() . '/svg/icon-instagram.svg');
         ?>
       </a>
     </li>
   <?php endif; ?>
   <?php if(get_field('social_pinterest_url', 'option') ): ?>
-    <li class="dib v-mid social-menu__item">
+    <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
       <a href="<?php the_field('social_pinterest_url', 'option') ?>" target="_blank" class="db">
         <?php
-          echo file_get_contents(get_template_directory_uri() . '/templates/svg/icon-pinterest.svg');
+          echo file_get_contents(get_template_directory_uri() . '/svg/icon-pinterest.svg');
         ?>
       </a>
     </li>
   <?php endif; ?>
   <?php if(get_field('social_rss_url', 'option') ): ?>
-    <li class="dib v-mid social-menu__item">
+    <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
       <a href="<?php the_field('social_rss_url', 'option') ?>" target="_blank" class="db">
         <?php
-          echo file_get_contents(get_template_directory_uri() . '/templates/svg/icon-rss.svg');
+          echo file_get_contents(get_template_directory_uri() . '/svg/icon-rss.svg');
         ?>
       </a>
     </li>

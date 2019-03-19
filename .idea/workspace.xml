@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="309964a6-36ca-4f15-9106-9e583c90ef75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/base/_accessibility.scss" beforeDir="false" afterPath="$PROJECT_DIR$/base/_accessibility.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tachyons-sass/tachyons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/tachyons-sass/tachyons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tachyons.sublime-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/tachyons.sublime-workspace" afterDir="false" />
-    </list>
+    <list default="true" id="309964a6-36ca-4f15-9106-9e583c90ef75" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +12,10 @@
     <session id="-35318801">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -33,8 +30,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="235" />
-    <option name="y" value="163" />
+    <option name="x" value="252" />
+    <option name="y" value="129" />
     <option name="width" value="1772" />
     <option name="height" value="1221" />
   </component>
@@ -75,23 +72,19 @@
       <option name="presentableId" value="Default" />
       <updated>1540921297077</updated>
       <workItem from="1540921298389" duration="9000" />
+      <workItem from="1546473041049" duration="7000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9000" />
+    <option name="totallyTimeSpent" value="16000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="235" y="163" width="1772" height="1221" extended-state="0" />
+    <frame x="252" y="129" width="1772" height="1221" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24971098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25260115" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -99,10 +92,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">

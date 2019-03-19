@@ -18,6 +18,11 @@
 
 @import 'tachyons-sass/tachyons';
 
+// placeholders
+
+@import "config/placeholders/bg";
+@import "config/placeholders/center";
+
 // config
 
 @import 'config/bem'; //https://medium.com/@marcmintel/pushing-bem-to-the-next-level-with-sass-3-4-5239d2371321#.s3dp11rmh

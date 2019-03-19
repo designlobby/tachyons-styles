@@ -1,2 +1,9 @@
 @include b(btn) {
+  text-decoration: none;
+  transition: color .15s ease-in, background-color .15s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transition: background-color .15s ease-in-out, background-color .15s ease-in-out;
+  }
 }
