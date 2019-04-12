@@ -3,7 +3,7 @@
 @import 'config/variables/media-queries';
 @import 'config/variables/colours';
 @import 'config/variables/typography';
-// @import 'config/variables/navigation';
+@import 'config/variables/navigation';
 
 /** Import everything from autoload */
 @import './autoload/**/*';
