@@ -27,7 +27,14 @@
   min-height: 0; /* 1 */
 }
 
+.item-left { margin-right: auto; }
+.item-right { margin-left: auto; }
+
 .flex-none { flex: none; }
+.item-top { margin-bottom: auto; }
+.item-right { margin-left: auto; }
+.item-bottom { margin-top: auto; }
+.item-left { margin-right: auto; }
 
 .flex-column  { flex-direction: column; }
 .flex-row     { flex-direction: row; }

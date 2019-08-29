@@ -1,4 +1,5 @@
 @include b(social-menu) {
+  font-size: 0;
 
   @include e(item) {
     &:last-child {margin-right: 0;}
@@ -11,54 +12,58 @@
 }
 
 
-<?php if(get_field('has_social_links', 'option') == "y" ): ?>
+@isoption('has_social_links', 'y')
 
 <ul class="pa0 ma0 mb3 social-menu">
-  <?php if(get_field('social_facebook_url', 'option') ): ?>
+
+  @hasoption('social_facebook_url')
     <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
-      <a href="<?php the_field('social_facebook_url', 'option') ?>" target="_blank" class="db facebook">
-        <?php
-          echo file_get_contents(get_template_directory_uri() . '/svg/icon-facebook.svg');
-        ?>
+      <a href="@option('social_facebook_url')" rel="noopener norefferer" target="_blank" class="db">
+        @svg('social--facebook', 'db')
       </a>
     </li>
-  <?php endif; ?>
-  <?php if(get_field('social_twitter_url', 'option') ): ?>
+  @endoption
+
+  @hasoption('social_twitter_url')
     <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
-      <a href="<?php the_field('social_twitter_url', 'option') ?>" target="_blank" class="db twitter">
-        <?php
-          echo file_get_contents(get_template_directory_uri() . '/svg/icon-twitter.svg');
-        ?>
+      <a href="@option('social_twitter_url')" rel="noopener norefferer" target="_blank" class="db">
+        @svg('social--twitter', 'db')
       </a>
     </li>
-  <?php endif; ?>
-  <?php if(get_field('social_instagram_url', 'option') ): ?>
+  @endoption
+
+  <@hasoption('social_instagram_url')
     <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
-      <a href="<?php the_field('social_instagram_url', 'option') ?>" target="_blank" class="db">
-        <?php
-          echo file_get_contents(get_template_directory_uri() . '/svg/icon-instagram.svg');
-        ?>
+      <a href="@option('social_instagram_url')" rel="noopener norefferer" target="_blank" class="db">
+        @svg('social--instagram', 'db')
       </a>
     </li>
-  <?php endif; ?>
-  <?php if(get_field('social_pinterest_url', 'option') ): ?>
+  @endoption
+
+  @hasoption('social_pinterest_url')
     <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
-      <a href="<?php the_field('social_pinterest_url', 'option') ?>" target="_blank" class="db">
-        <?php
-          echo file_get_contents(get_template_directory_uri() . '/svg/icon-pinterest.svg');
-        ?>
+      <a href="@option('social_pinterest_url')" rel="noopener norefferer" target="_blank" class="db">
+        @svg('social--pinterest', 'db')
       </a>
     </li>
-  <?php endif; ?>
-  <?php if(get_field('social_rss_url', 'option') ): ?>
+  @endoption
+
+  @hasoption('social_linkedin_url')
     <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
-      <a href="<?php the_field('social_rss_url', 'option') ?>" target="_blank" class="db">
-        <?php
-          echo file_get_contents(get_template_directory_uri() . '/svg/icon-rss.svg');
-        ?>
+      <a href="@option('social_linkedin_url')" rel="noopener norefferer" target="_blank" class="db">
+        @svg('social--linkedin', 'db')
       </a>
     </li>
-  <?php endif; ?>
+  @endoption
+
+  @hasoption('social_rss_url')
+    <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
+      <a href="@option('social_rss_url')" rel="noopener norefferer" target="_blank" class="db">
+        @svg('social--rss', 'db')
+      </a>
+    </li>
+  @endoption
+
 </ul>
 
 <?php endif; ?>

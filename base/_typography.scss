@@ -32,7 +32,8 @@ h6 {
   color: $headings-font-color;
 }
 
-p {
+p,
+li {
   margin-top: 0;
   line-height: 1.5;
 
@@ -43,10 +44,11 @@ p {
 
 a {
   color: $brand-primary;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     color: darken($brand-primary, 15%);
+    text-decoration: none;
   }
 }
 
