@@ -32,6 +32,11 @@
 
 */
 
+.top-auto    { top:    auto; }
+.right-auto  { right:  auto; }
+.bottom-auto { bottom: auto; }
+.left-auto   { left:   auto; }
+
 .top-0    { top:    0; }
 .right-0  { right:  0; }
 .bottom-0 { bottom: 0; }
@@ -47,6 +52,21 @@
 .bottom-2 { bottom: 2rem; }
 .left-2   { left:   2rem; }
 
+.top-3    { top:    3rem; }
+.right-3  { right:  3rem; }
+.bottom-3 { bottom: 3rem; }
+.left-3   { left:   3rem; }
+
+.top-4    { top:    4rem; }
+.right-4  { right:  4rem; }
+.bottom-4 { bottom: 4rem; }
+.left-4   { left:   4rem; }
+
+.top-5    { top:    5rem; }
+.right-5  { right:  5rem; }
+.bottom-5 { bottom: 5rem; }
+.left-5   { left:   5rem; }
+
 .top--1    { top:    -1rem; }
 .right--1  { right:  -1rem; }
 .bottom--1 { bottom: -1rem; }
@@ -57,7 +77,6 @@
 .bottom--2 { bottom: -2rem; }
 .left--2   { left:   -2rem; }
 
-
 .absolute--fill {
   top: 0;
   right: 0;
@@ -66,6 +85,10 @@
 }
 
 @media #{$breakpoint-not-small} {
+  .top-auto-ns    { top:    auto; }
+  .right-auto-ns  { right:  auto; }
+  .bottom-auto-ns { bottom: auto; }
+  .left-auto-ns   { left:   auto; }
   .top-0-ns     { top:   0; }
   .left-0-ns    { left:  0; }
   .right-0-ns   { right: 0; }
@@ -95,6 +118,10 @@
 }
 
 @media #{$breakpoint-tablet} {
+  .top-auto-t    { top:    auto; }
+  .right-auto-t  { right:  auto; }
+  .bottom-auto-t { bottom: auto; }
+  .left-auto-t   { left:   auto; }
   .top-0-t     { top:   0; }
   .left-0-t    { left:  0; }
   .right-0-t   { right: 0; }
@@ -124,6 +151,10 @@
 }
 
 @media #{$breakpoint-medium} {
+  .top-auto-m    { top:    auto; }
+  .right-auto-m  { right:  auto; }
+  .bottom-auto-m { bottom: auto; }
+  .left-auto-m   { left:   auto; }
   .top-0-m     { top:   0; }
   .left-0-m    { left:  0; }
   .right-0-m   { right: 0; }
@@ -153,6 +184,10 @@
 }
 
 @media #{$breakpoint-large} {
+  .top-auto-l    { top:    auto; }
+  .right-auto-l  { right:  auto; }
+  .bottom-auto-l { bottom: auto; }
+  .left-auto-l   { left:   auto; }
   .top-0-l     { top:   0; }
   .left-0-l    { left:  0; }
   .right-0-l   { right: 0; }

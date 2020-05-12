@@ -13,6 +13,7 @@ $font-size-4: 1.25rem !default;
 $font-size-5: 1rem !default;
 $font-size-6: .875rem !default;
 $font-size-7: .75rem !default;
+$font-size-zero: 0 !default;
 $letter-spacing-tight: -.05em !default;
 $letter-spacing-1: .1em !default;
 $letter-spacing-2: .25em !default;
@@ -135,7 +136,7 @@ $washed-red: #ffdfdf !default;
 $breakpoint-not-small: 'screen and (min-width: 480px)' !default;
 $breakpoint-tablet: 'screen and (min-width: 768px)' !default;
 $breakpoint-medium: 'screen and (min-width: 960px)' !default;
-$breakpoint-large: 'screen and (min-width: 1200px)' !default;
+$breakpoint-large: 'screen and (min-width: 1280px)' !default;
 
 /*
 

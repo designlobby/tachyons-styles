@@ -54,6 +54,7 @@
 .f5 { font-size: $font-size-5; }
 .f6 { font-size: $font-size-6; }
 .f7 { font-size: $font-size-7; }
+.f0 { font-size: $font-size-zero; }
 
 @media #{$breakpoint-not-small}{
   .f-6-ns,

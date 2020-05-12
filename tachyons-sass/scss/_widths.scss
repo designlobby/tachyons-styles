@@ -77,6 +77,15 @@
 .w-gr-wide { width: 61.8%; }
 .w-auto { width: auto; }
 
+/* Screen Width Percentage */
+
+.vw-25 {  width:  25vw; }
+.vw-50 {  width:  50vw; }
+.vw-75 {  width:  75vw; }
+.vw-100 { width: 100vw; }
+
+.min-vw-100 { min-width: 100vw; }
+
 @media #{$breakpoint-not-small} {
   .w1-ns {  width: $width-1; }
   .w2-ns {  width: $width-2; }

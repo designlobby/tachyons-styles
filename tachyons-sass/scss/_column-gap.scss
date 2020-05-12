@@ -1,0 +1,37 @@
+  .cg-1 { -webkit-column-gap: 1rem; -moz-column-gap: 1rem; column-gap: 1rem; }
+  .cg-2 { -webkit-column-gap: 2rem; -moz-column-gap: 2rem; column-gap: 2rem; }
+  .cg-3 { -webkit-column-gap: 4rem; -moz-column-gap: 4rem; column-gap: 4rem; }
+  .cg-n { -webkit-column-gap: normal; -moz-column-gap: normal; column-gap: normal; }
+  .cg-i { -webkit-column-gap: inherit; -moz-column-gap: inherit; column-gap: inherit; }
+
+@media #{$breakpoint-not-small} {
+  .cg-1-ns { -webkit-column-gap: 1rem; -moz-column-gap: 1rem; column-gap: 1rem; }
+  .cg-2-ns { -webkit-column-gap: 2rem; -moz-column-gap: 2rem; column-gap: 2rem; }
+  .cg-3-ns { -webkit-column-gap: 4rem; -moz-column-gap: 4rem; column-gap: 4rem; }
+  .cg-n-ns { -webkit-column-gap: normal; -moz-column-gap: normal; column-gap: normal; }
+  .cg-i-ns { -webkit-column-gap: inherit; -moz-column-gap: inherit; column-gap: inherit; }
+}
+
+@media #{$breakpoint-tablet} {
+  .cg-1-t { -webkit-column-gap: 1rem; -moz-column-gap: 1rem; column-gap: 1rem; }
+  .cg-2-t { -webkit-column-gap: 2rem; -moz-column-gap: 2rem; column-gap: 2rem; }
+  .cg-3-t { -webkit-column-gap: 4rem; -moz-column-gap: 4rem; column-gap: 4rem; }
+  .cg-n-t { -webkit-column-gap: normal; -moz-column-gap: normal; column-gap: normal; }
+  .cg-i-t { -webkit-column-gap: inherit; -moz-column-gap: inherit; column-gap: inherit; }
+}
+
+@media #{$breakpoint-medium} {
+  .cg-1-m { -webkit-column-gap: 1rem; -moz-column-gap: 1rem; column-gap: 1rem; }
+  .cg-2-m { -webkit-column-gap: 2rem; -moz-column-gap: 2rem; column-gap: 2rem; }
+  .cg-3-m { -webkit-column-gap: 4rem; -moz-column-gap: 4rem; column-gap: 4rem; }
+  .cg-n-m { -webkit-column-gap: normal; -moz-column-gap: normal; column-gap: normal; }
+  .cg-i-m { -webkit-column-gap: inherit; -moz-column-gap: inherit; column-gap: inherit; }
+}
+
+@media #{$breakpoint-large} {
+  .cg-1-l { -webkit-column-gap: 1rem; -moz-column-gap: 1rem; column-gap: 1rem; }
+  .cg-2-l { -webkit-column-gap: 2rem; -moz-column-gap: 2rem; column-gap: 2rem; }
+  .cg-3-l { -webkit-column-gap: 4rem; -moz-column-gap: 4rem; column-gap: 4rem; }
+  .cg-n-l { -webkit-column-gap: normal; -moz-column-gap: normal; column-gap: normal; }
+  .cg-i-l { -webkit-column-gap: inherit; -moz-column-gap: inherit; column-gap: inherit; }
+}
