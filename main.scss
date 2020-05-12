@@ -1,3 +1,7 @@
+// custom tachyons
+
+@import 'tachyons-sass/tachyons';
+
 // variables
 
 @import 'config/variables/media-queries';
@@ -15,8 +19,6 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import '~some-node-module';
-
-@import 'tachyons-sass/tachyons';
 
 // placeholders
 
