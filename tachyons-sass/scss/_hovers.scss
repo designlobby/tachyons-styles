@@ -18,6 +18,11 @@
     - Pointer
     - Shadow
 
+
+  NOTE:
+  Removed transitons to all be handled by .link to avoid clashing styles
+  so use .link.dim etc
+
 */
 
 /*
@@ -27,15 +32,16 @@
 */
 .dim {
   opacity: 1;
-  transition: opacity .15s ease-in;
+  // transition: opacity .15s ease-in;
 }
 .dim:hover,
 .dim:focus {
   opacity: .5;
-  transition: opacity .15s ease-in;
+  // transition: opacity .15s ease-in;
 }
 .dim:active {
-  opacity: .8; transition: opacity .15s ease-out;
+  opacity: .8;
+  // transition: opacity .15s ease-out;
 }
 
 /*
@@ -44,12 +50,12 @@
 
 */
 .glow {
-  transition: opacity .15s ease-in;
+  // transition: opacity .15s ease-in;
 }
 .glow:hover,
 .glow:focus {
   opacity: 1;
-  transition: opacity .15s ease-in;
+  // transition: opacity .15s ease-in;
 }
 
 /*
@@ -90,7 +96,7 @@
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
-  transition: transform 0.25s ease-out;
+  // transition: transform 0.25s ease-out;
 }
 
 .grow:hover,
@@ -106,7 +112,7 @@
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
-  transition: transform .25s ease-in-out;
+  // transition: transform .25s ease-in-out;
 }
 
 .grow-large:hover,
@@ -159,8 +165,8 @@
 /* Combine with classes in skins and skins-pseudo for
  * many different transition possibilities. */
 
-.bg-animate,
-.bg-animate:hover,
-.bg-animate:focus {
-  transition: background-color .15s ease-in-out;
-}
+// .bg-animate,
+// .bg-animate:hover,
+// .bg-animate:focus {
+//   transition: background-color .15s ease-in-out;
+// }
