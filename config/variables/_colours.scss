@@ -35,17 +35,17 @@ $social-rss:                  #ee802f !default;
 
 // color
 
-.black { background-color: $black; }
-.near-black { background-color: $near-black; }
-.dark-grey { background-color: $dark-grey; }
-.mid-grey { background-color: $mid-grey; }
-.grey { background-color: $grey; }
-.silver { background-color: $silver; }
-.light-silver { background-color: $light-silver; }
-.moon-grey { background-color: $moon-grey; }
-.light-grey { background-color: $light-grey; }
-.near-white { background-color: $near-white; }
-.white { background-color: $white; }
+.black { color: $black; }
+.near-black { color: $near-black; }
+.dark-grey { color: $dark-grey; }
+.mid-grey { color: $mid-grey; }
+.grey { color: $grey; }
+.silver { color: $silver; }
+.light-silver { color: $light-silver; }
+.moon-grey { color: $moon-grey; }
+.light-grey { color: $light-grey; }
+.near-white { color: $near-white; }
+.white { color: $white; }
 
 .color-brand-primary { color: $brand-primary; }
 .color-brand-secondary { color: $brand-secondary; }
@@ -121,50 +121,50 @@ $social-rss:                  #ee802f !default;
 .bg-white { background-color: $white; }
 // .bg-transparent { background-color: $transparent; }
 
-.bg-brand-primary { background: $brand-primary; }
-.bg-brand-secondary { background: $brand-secondary; }
-.bg-brand-tertiary { background: $brand-tertiary; }
+.bg-brand-primary { background-color: $brand-primary; }
+.bg-brand-secondary { background-color: $brand-secondary; }
+.bg-brand-tertiary { background-color: $brand-tertiary; }
 
-.bg-brand-success { background: $brand-success; }
-.bg-brand-info { background: $brand-info; }
-.bg-brand-warning { background: $brand-warning; }
-.bg-brand-danger { background: $brand-danger; }
+.bg-brand-success { background-color: $brand-success; }
+.bg-brand-info { background-color: $brand-info; }
+.bg-brand-warning { background-color: $brand-warning; }
+.bg-brand-danger { background-color: $brand-danger; }
 
-.bg-social-facebook { background: $social-facebook; }
-.bg-social-twitter { background: $social-twitter; }
-.bg-social-google { background: $social-google; }
-.bg-social-linkedin { background: $social-linkedin; }
-.bg-social-youtube { background: $social-youtube; }
-.bg-social-instagram { background: $social-instagram; }
-.bg-social-pinterest { background: $social-pinterest; }
-.bg-social-snapchat { background: $social-snapchat; }
-.bg-social-skype { background: $social-skype; }
-.bg-social-rss { background: $social-rss; }
+.bg-social-facebook { background-color: $social-facebook; }
+.bg-social-twitter { background-color: $social-twitter; }
+.bg-social-google { background-color: $social-google; }
+.bg-social-linkedin { background-color: $social-linkedin; }
+.bg-social-youtube { background-color: $social-youtube; }
+.bg-social-instagram { background-color: $social-instagram; }
+.bg-social-pinterest { background-color: $social-pinterest; }
+.bg-social-snapchat { background-color: $social-snapchat; }
+.bg-social-skype { background-color: $social-skype; }
+.bg-social-rss { background-color: $social-rss; }
 
 // hover background
 
 .hover-bg-brand-primary:hover,
-.hover-bg-brand-primary:focus { background: lighten($brand-primary, 8%); }
+.hover-bg-brand-primary:focus { background-color: lighten($brand-primary, 8%); }
 .hover-bg-brand-secondary:hover,
-.hover-bg-brand-secondary:focus { background: lighten($brand-secondary, 8%); }
+.hover-bg-brand-secondary:focus { background-color: lighten($brand-secondary, 8%); }
 .hover-bg-brand-tertiary:hover,
-.hover-bg-brand-tertiary:focus { background: lighten($brand-tertiary, 8%); }
+.hover-bg-brand-tertiary:focus { background-color: lighten($brand-tertiary, 8%); }
 
-.hover-bg-brand-success { background: $brand-success; }
-.hover-bg-brand-info { background: $brand-info; }
-.hover-bg-brand-warning { background: $brand-warning; }
-.hover-bg-brand-danger { background: $brand-danger; }
+.hover-bg-brand-success { background-color: $brand-success; }
+.hover-bg-brand-info { background-color: $brand-info; }
+.hover-bg-brand-warning { background-color: $brand-warning; }
+.hover-bg-brand-danger { background-color: $brand-danger; }
 
-.hover-bg-social-facebook { background: $social-facebook; }
-.hover-bg-social-twitter { background: $social-twitter; }
-.hover-bg-social-google { background: $social-google; }
-.hover-bg-social-linkedin { background: $social-linkedin; }
-.hover-bg-social-youtube { background: $social-youtube; }
-.hover-bg-social-instagram { background: $social-instagram; }
-.hover-bg-social-pinterest { background: $social-pinterest; }
-.hover-bg-social-snapchat { background: $social-snapchat; }
-.hover-bg-social-skype { background: $social-skype; }
-.hover-bg-social-rss { background: $social-rss; }
+.hover-bg-social-facebook { background-color: $social-facebook; }
+.hover-bg-social-twitter { background-color: $social-twitter; }
+.hover-bg-social-google { background-color: $social-google; }
+.hover-bg-social-linkedin { background-color: $social-linkedin; }
+.hover-bg-social-youtube { background-color: $social-youtube; }
+.hover-bg-social-instagram { background-color: $social-instagram; }
+.hover-bg-social-pinterest { background-color: $social-pinterest; }
+.hover-bg-social-snapchat { background-color: $social-snapchat; }
+.hover-bg-social-skype { background-color: $social-skype; }
+.hover-bg-social-rss { background-color: $social-rss; }
 
 // fill
 
