@@ -162,34 +162,34 @@
   padding-right: $spacing-extra-extra-extra-large;
 }
 
-.ma0  {  margin: $spacing-none; }
-.ma1 {  margin: $spacing-extra-small; }
-.ma2  {  margin: $spacing-small; }
-.ma3  {  margin: $spacing-medium; }
-.ma4  {  margin: $spacing-large; }
-.ma5  {  margin: $spacing-extra-large; }
-.ma6 {  margin: $spacing-extra-extra-large; }
+.ml-auto { margin-left: $spacing-auto; }
+.mr-auto { margin-right: $spacing-auto; }
+
+.ma0 { margin: $spacing-none; }
+.ma1 { margin: $spacing-extra-small; }
+.ma2 { margin: $spacing-small; }
+.ma3 { margin: $spacing-medium; }
+.ma4 { margin: $spacing-large; }
+.ma5 { margin: $spacing-extra-large; }
+.ma6 { margin: $spacing-extra-extra-large; }
 .ma7 { margin: $spacing-extra-extra-extra-large; }
 
-.ml-auto { margin-left: auto; }
-.mr-auto { margin-right: auto; }
-
-.ml0  {  margin-left: $spacing-none; }
-.ml1 {  margin-left: $spacing-extra-small; }
-.ml2  {  margin-left: $spacing-small; }
-.ml3  {  margin-left: $spacing-medium; }
-.ml4  {  margin-left: $spacing-large; }
-.ml5  {  margin-left: $spacing-extra-large; }
-.ml6 {  margin-left: $spacing-extra-extra-large; }
+.ml0 { margin-left: $spacing-none; }
+.ml1 { margin-left: $spacing-extra-small; }
+.ml2 { margin-left: $spacing-small; }
+.ml3 { margin-left: $spacing-medium; }
+.ml4 { margin-left: $spacing-large; }
+.ml5 { margin-left: $spacing-extra-large; }
+.ml6 { margin-left: $spacing-extra-extra-large; }
 .ml7 { margin-left: $spacing-extra-extra-extra-large; }
 
-.mr0  {  margin-right: $spacing-none; }
-.mr1 {  margin-right: $spacing-extra-small; }
-.mr2  {  margin-right: $spacing-small; }
-.mr3  {  margin-right: $spacing-medium; }
-.mr4  {  margin-right: $spacing-large; }
-.mr5  {  margin-right: $spacing-extra-large; }
-.mr6 {  margin-right: $spacing-extra-extra-large; }
+.mr0 { margin-right: $spacing-none; }
+.mr1 { margin-right: $spacing-extra-small; }
+.mr2 { margin-right: $spacing-small; }
+.mr3 { margin-right: $spacing-medium; }
+.mr4 { margin-right: $spacing-large; }
+.mr5 { margin-right: $spacing-extra-large; }
+.mr6 { margin-right: $spacing-extra-extra-large; }
 .mr7 { margin-right: $spacing-extra-extra-extra-large; }
 
 .mb0  {  margin-bottom: $spacing-none; }
@@ -387,6 +387,9 @@
     padding-right: $spacing-extra-extra-extra-large;
   }
 
+  .ml-auto-ns { margin-left: $spacing-auto; }
+  .mr-auto-ns { margin-right: $spacing-auto; }
+
   .ma0-ns  {  margin: $spacing-none; }
   .ma1-ns {  margin: $spacing-extra-small; }
   .ma2-ns  {  margin: $spacing-small; }
@@ -395,9 +398,6 @@
   .ma5-ns  {  margin: $spacing-extra-large; }
   .ma6-ns {  margin: $spacing-extra-extra-large; }
   .ma7-ns { margin: $spacing-extra-extra-extra-large; }
-
-  .ml-auto-ns { margin-left: auto; }
-  .mr-auto-ns { margin-right: auto; }
 
   .ml0-ns  {  margin-left: $spacing-none; }
   .ml1-ns {  margin-left: $spacing-extra-small; }
@@ -614,6 +614,9 @@
     padding-right: $spacing-extra-extra-extra-large;
   }
 
+  .ml-auto-t { margin-left: $spacing-auto; }
+  .mr-auto-t { margin-right: $spacing-auto; }
+
   .ma0-t  {  margin: $spacing-none; }
   .ma1-t {  margin: $spacing-extra-small; }
   .ma2-t  {  margin: $spacing-small; }
@@ -622,9 +625,6 @@
   .ma5-t  {  margin: $spacing-extra-large; }
   .ma6-t {  margin: $spacing-extra-extra-large; }
   .ma7-t { margin: $spacing-extra-extra-extra-large; }
-
-  .ml-auto-t { margin-left: auto; }
-  .mr-auto-t { margin-right: auto; }
 
   .ml0-t  {  margin-left: $spacing-none; }
   .ml1-t {  margin-left: $spacing-extra-small; }
@@ -842,6 +842,9 @@
     padding-right: $spacing-extra-extra-extra-large;
   }
 
+  .ml-auto-m { margin-left: $spacing-auto; }
+  .mr-auto-m { margin-right: $spacing-auto; }
+
   .ma0-m  {  margin: $spacing-none; }
   .ma1-m {  margin: $spacing-extra-small; }
   .ma2-m  {  margin: $spacing-small; }
@@ -850,9 +853,6 @@
   .ma5-m  {  margin: $spacing-extra-large; }
   .ma6-m {  margin: $spacing-extra-extra-large; }
   .ma7-m { margin: $spacing-extra-extra-extra-large; }
-
-  .ml-auto-m { margin-left: auto; }
-  .mr-auto-m { margin-right: auto; }
 
   .ml0-m  {  margin-left: $spacing-none; }
   .ml1-m {  margin-left: $spacing-extra-small; }
@@ -1070,6 +1070,9 @@
     padding-right: $spacing-extra-extra-extra-large;
   }
 
+  .ml-auto-l { margin-left: $spacing-auto; }
+  .mr-auto-l { margin-right: $spacing-auto; }
+
   .ma0-l  {  margin: $spacing-none; }
   .ma1-l {  margin: $spacing-extra-small; }
   .ma2-l  {  margin: $spacing-small; }
@@ -1078,9 +1081,6 @@
   .ma5-l  {  margin: $spacing-extra-large; }
   .ma6-l {  margin: $spacing-extra-extra-large; }
   .ma7-l { margin: $spacing-extra-extra-extra-large; }
-
-  .ml-auto-l { margin-left: auto; }
-  .mr-auto-l { margin-right: auto; }
 
   .ml0-l  {  margin-left: $spacing-none; }
   .ml1-l {  margin-left: $spacing-extra-small; }

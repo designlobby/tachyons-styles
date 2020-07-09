@@ -36,13 +36,10 @@
 @import 'base/typography';
 @import 'base/lists';
 
-// Default gravity forms styles
-// https://github.com/thatryan/gravity-forms-sass
-
 @import 'forms/form-variables';
 @import 'forms/form-mixins';
 @import 'forms/form-default';
-@import 'forms/form-gravity';
+// @import 'forms/form-gravity';
 @import 'forms/form-placeholders';
 // @import 'forms/form-checkboxes'; // Move sprite to /images before compiling
 @import 'forms/form-captcha';

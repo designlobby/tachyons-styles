@@ -26,16 +26,11 @@
   margin-left: auto;
 }
 
-.mr-auto { margin-right: auto; }
-.ml-auto { margin-left:  auto; }
-
 @media #{$breakpoint-not-small}{
   .center-ns {
     margin-right: auto;
     margin-left: auto;
   }
-  .mr-auto-ns { margin-right: auto; }
-  .ml-auto-ns { margin-left:  auto; }
 }
 
 @media #{$breakpoint-tablet}{
@@ -43,8 +38,6 @@
     margin-right: auto;
     margin-left: auto;
   }
-  .mr-auto-t { margin-right: auto; }
-  .ml-auto-t { margin-left:  auto; }
 }
 
 @media #{$breakpoint-medium}{
@@ -52,8 +45,6 @@
     margin-right: auto;
     margin-left: auto;
   }
-  .mr-auto-m { margin-right: auto; }
-  .ml-auto-m { margin-left:  auto; }
 }
 
 @media #{$breakpoint-large}{
@@ -61,6 +52,4 @@
     margin-right: auto;
     margin-left: auto;
   }
-  .mr-auto-l { margin-right: auto; }
-  .ml-auto-l { margin-left:  auto; }
 }

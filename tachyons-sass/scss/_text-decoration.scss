@@ -22,7 +22,6 @@
 .underline    { text-decoration: underline; }
 .no-underline { text-decoration: none; }
 
-
 @media #{$breakpoint-not-small} {
   .strike-ns       { text-decoration: line-through; }
   .underline-ns    { text-decoration: underline; }
@@ -45,4 +44,49 @@
   .strike-l       { text-decoration: line-through; }
   .underline-l {    text-decoration: underline; }
   .no-underline-l { text-decoration: none; }
+}
+
+// hover
+
+.strike-hover:hover,
+.strike-hover:focus       { text-decoration: line-through; }
+.underline-hover:hover,
+.underline-hover:focus     { text-decoration: underline; }
+.no-underline-hover:hover,
+.no-underline-hover:focus  { text-decoration: none; }
+
+@media #{$breakpoint-not-small} {
+  .strike-ns-hover:hover,
+  .strike-ns-hover:focus        { text-decoration: line-through; }
+  .underline-ns-hover:hover,
+  .underline-ns-hover:focus     { text-decoration: underline; }
+  .no-underline-ns-hover:hover
+  .no-underline-ns-hover:focus,  { text-decoration: none; }
+}
+
+@media #{$breakpoint-tablet} {
+  .strike-t-hover:hover,
+  .strike-t-hover:hover        { text-decoration: line-through; }
+  .underline-t-hover:hover,
+  .underline-t-hover:hover     { text-decoration: underline; }
+  .no-underline-t-hover:hover,
+  .no-underline-t-hover:hover  { text-decoration: none; }
+}
+
+@media #{$breakpoint-medium} {
+  .strike-m-hover:hover,
+  .strike-m-hover:focus        { text-decoration: line-through; }
+  .underline-m-hover:hover,
+  .underline-m-hover:focus     { text-decoration: underline; }
+  .no-underline-m-hover:hover,
+  .no-underline-m-hover:focus  { text-decoration: none; }
+}
+
+@media #{$breakpoint-large} {
+  .strike-l-hover:hover,
+  .strike-l-hover:focus        { text-decoration: line-through; }
+  .underline-l-hover:hover,
+  .underline-l-hover:focus  {    text-decoration: underline; }
+  .no-underline-l-hover:hover,
+  .no-underline-l-hover:focus  { text-decoration: none; }
 }
