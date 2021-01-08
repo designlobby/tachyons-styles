@@ -44,7 +44,7 @@
 
 
 // <?php
-//
+
 // /***************************************************************
 //  * Add class to li items -
 //  * https://wordpress.stackexchange.com/questions/245503/add-a-custom-class-to-nav-li-item
@@ -58,14 +58,46 @@
 //     // return $classes;
 
 //     if ( 'primary_navigation' === $args->theme_location ) {
-//         $classes[] = 'relative dib ma0 pa2-m pb0-m tc';
+//         $classes[] = 'relative db pa0 ma0';
 //     }
-//     elseif ( 'language_navigation' === $args->theme_location ) {
-//         $classes[] = 'dib pa1 ma0';
-//     }
+//     // elseif ( 'footer_navigation' === $args->theme_location ) {
+//     //     $classes[] = 'pa0 ma0 mr3';
+//     // }
+//     // elseif ( 'legal_navigation' === $args->theme_location ) {
+//     //     $classes[] = 'dib pa0 ma0 mh2';
+//     // }
 
 //     return $classes;
 // }
+
+// **************************************************************
+//  * Add class to anchor items in specific menu -
+//  * https://stackoverflow.com/questions/42994156/wordpress-menu-add-class-to-anchors
+// **************************************************************
+
+// function dl_add_class_anchors( $atts, $item, $args ) {
+
+//     $menuClassMap = [
+//         'primary-navigation' => 'db pa3 f5 fw7 white hover-white no-underline',
+//         // 'mobile-navigation' => 'my-mobile-menu-link-class',
+//     ];
+
+//     $additionalClassName = $menuClassMap[$args->menu->slug] ?? '';
+
+//     if($additionalClassName){
+//         if(!array_key_exists('class', $atts)){
+//             $atts['class'] = '';
+//         }
+//         $classList = explode (' ' , $atts['class']);
+//         $classList[] = $additionalClassName;
+//         $atts['class'] = implode (' ' , $classList);
+//     }
+//     return $atts;
+
+// }
+
+// add_filter( 'nav_menu_link_attributes', 'dl_add_class_anchors', 10, 3 );
+
 
 
 
@@ -74,58 +106,43 @@
 
   a,
   a:visited {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    font-family: $nav-font-family;
-    font-size: $nav-font-size;
-    font-weight: $font-weight-bold;
-    color: $nav-font-color;
-    text-decoration: none;
-    background-color: $nav-bg-color;
 
     &:hover,
     &:focus,
     &:active {
-      color: $nav-font-hover-color;
-      background-color: $nav-bg-hover-color;
-      outline: 0 dotted currentColor;
     }
 
     // dropdown arrow
     &:not(:only-child):after {
-      padding-left: 4px;
+      padding-left: 2px;
       content: ' ▾';
     }
   }
 
-  // Dropdown list binds to JS toggle event
   .sub-menu {
-    position: static;
-    z-index: 1;
-    display: none;
-    width: 100%;
-    padding: 0;
-    margin: 0;
 
     a {
-      line-height: 2;
-      color: $nav-dd-font-color;
-      background-color: $nav-dd-bg-color;
 
       &:hover,
       &:focus,
       &:active {
-        color: $nav-dd-font-hover-color;
-        background-color: $nav-dd-bg-hover-color;
       }
     }
   }
 
-  .active {
+  .active,
+  .open {
     a {
-      color: $white;
-      background-color: $brand-secondary;
+      background-color: $brand-primary;
+
+      &:hover {
+        background-color: $brand-primary--contrast;
+      }
+
+      &:focus,
+      &:active {
+        background-color: $brand-primary;
+      }
     }
   }
 }
@@ -135,22 +152,15 @@
   .primary-navigation {
     display: flex !important; // required to reset nav on browser resize
 
-    // a,
-    // a:visited {
-    //   padding: 0;
-    //   line-height: 1;
-    // }
-
-    // Dropdown list binds to JS toggle event
     .sub-menu {
-      position: absolute;
 
       li {
-        min-width: 200px;
+        min-width: 240px;
       }
     }
   }
 }
+
 
 
 
