@@ -12,3 +12,9 @@ img {
   height: auto;
   max-width: 100%;
 }
+
+// fix button spans
+
+button > * {
+  pointer-events: none;
+}

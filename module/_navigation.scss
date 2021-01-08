@@ -1,18 +1,45 @@
-// <header class="w-100 center cf">
-//   <div class="cf">
-//     <a class="dib dn-m brand brand--header" href="{{ home_url('/') }}" title="{{ get_bloginfo('name', 'display') }}">
-//       @svg('brand-mark')
-//     </a>
-//     <div class="relative fr db dn-m nav-mobile">
-//       <a id="nav-toggle" href="#!"><span></span></a>
+// <header class='flex flex-wrap items-end w-100 mw9 pa3 center' role='banner'>
+//   <a href='<?php echo home_url(); ?>' class='db ml3 f0 header--brand' aria-label='Home - Freshfield Nursery School'>
+//     @svg('freshfield--text', 'dib freshfield--name')
+//   </a>
+//   <a href='tel:0161-442-6944' aria-label='telephone. 0 1 6 1. 4 4 2. 6 9 4 4.' class='freshfield--telephone'>0161 442 6944</a>
+//   <a href='#content' class='screen-reader-text'>Skip navigation</a>
+//   <nav id="navigation" class='relative w-100 pt5 pt0-m mt3 bg-brand-primary--contrast nav-primary'>
+//     <div class='absolute top-0 right-0 db dn-m nav-mobile'>
+//        $ yarn add hamburgers
+//        https://jonsuh.com/hamburgers/
+//       <button id='nav-toggle' class='hamburger hamburger--squeeze' type='button' aria-label='Menu' role='button' aria-controls='navigation'>
+//         <span class='hamburger-label mr2 white'>Menu</span>
+//         <span class='hamburger-box'>
+//           <span class='hamburger-inner bg-white'></span>
+//         </span>
+//       </button>
 //     </div>
-//   </div>
-//   <nav class="nav-primary">
 //     @if (has_nav_menu('primary_navigation'))
-//       {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'dn flex-m flex-row flex-nowrap w-100 pa0 ma0 list primary-navigation']) !!}
+//       {!! wp_nav_menu([
+//         'theme_location'    => 'primary_navigation',
+//         'depth'             => 2,
+//         'menu_id'           => 'primary-nav',
+//         'menu_class'        => 'dn flex-m pa0 ma0 list primary-navigation',
+//         'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+//         'walker'            => new \App\WP_Bootstrap_Navwalker()
+//       ]) !!}
 //     @endif
 //   </nav>
 // </header>
+// https://github.com/wp-bootstrap/wp-bootstrap-navwalker
+// <nav class="w-100 mt3 bg-brand-primary--contrast nav-primary">
+//     @if (has_nav_menu('primary_navigation'))
+//       {!! wp_nav_menu([
+//         'theme_location'    => 'primary_navigation',
+//         'depth'             => 2,
+//         'menu_id'           => 'primary-nav',
+//         'menu_class'        => 'dn flex-m pa0 ma0 list primary-nav',
+//         'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+//         'walker'            => new \App\WP_Bootstrap_Navwalker()
+//       ]) !!}
+//     @endif
+//   </nav>
 
 
 
@@ -108,11 +135,11 @@
   .primary-navigation {
     display: flex !important; // required to reset nav on browser resize
 
-    a,
-    a:visited {
-      padding: 0;
-      line-height: 1;
-    }
+    // a,
+    // a:visited {
+    //   padding: 0;
+    //   line-height: 1;
+    // }
 
     // Dropdown list binds to JS toggle event
     .sub-menu {
@@ -128,34 +155,54 @@
 
 
 
-// // Responsive Dropdown Navigation Bar
-// // https://gist.github.com/taniarascia/56893ff29f64038dca91
-// // If a link has a dropdown, add sub menu toggle.
-// // Responsive Dropdown Navigation Bar
-// // https://gist.github.com/taniarascia/56893ff29f64038dca91
-// // If a link has a dropdown, add sub menu toggle.
-// $('.nav-primary ul li a:not(:only-child)').click(function(e) {
-//   $(this).siblings('.sub-menu').toggle();
-//   // Close one dropdown when selecting another
-//   $('.sub-menu').not($(this).siblings()).hide();
-//   e.stopPropagation();
-// });
-// // Clicking away from dropdown will remove the dropdown class
-// $('html').click(function() {
-//   $('.sub-menu').hide();
-// });
-// // Clicking a link closes the menu - page scroll
-// // $('nav ul li a').click(function() {
-// //   $('nav ul').slideToggle();
-// // });
-// // Toggle open and close nav styles on click
-// $('#nav-toggle').click(function() {
-//   $('.nav-primary ul').slideToggle();
-// });
-// // Hamburger to X toggle
-// $('#nav-toggle').on('click', function() {
-//   this.classList.toggle('active');
-// });
+// // vars
+//     const navToggle = document.getElementById('nav-toggle');
+//     const navPrimary = document.getElementById('primary-nav');
+//     let navPrimaryLi = document.querySelectorAll('#primary-nav li.menu-item-has-children');
 
-// // Add .brand--nav
-// $('ul li.menu-cheshire-joinery').find('a').addClass('menu-cheshire-joinery__brand');
+
+
+//     // closeOpenItems function
+//     function closeOpenItems() {
+//       let navPrimaryLi = document.querySelectorAll('#primary-nav li.menu-item-has-children.open');
+//       navPrimaryLi.forEach(function(el) {
+//         el.classList.remove('open');
+//         el.firstElementChild.setAttribute('aria-expanded', 'false');
+//         el.lastElementChild.style.display = 'none';
+//       });
+//     }
+
+
+
+//     // event delegation
+//     document.addEventListener('click', function(event) {
+//       // outside element click
+//       if (!event.target.closest('.primary-navigation')) {
+//         closeOpenItems()
+//       }
+//       // element click
+//       // Hamburger toggle -> Nav
+//       if (event.target.matches('.hamburger')) {
+//         navToggle.classList.toggle('is-active');
+//         // navPrimary.classList.toggle('db');
+//         slideToggle(navPrimary, 150);
+//       }
+//     });
+
+
+
+//     Array.prototype.forEach.call(navPrimaryLi, function(el){
+//       // show/hide sub-menus on click
+//       el.querySelector('a').addEventListener('click', function(e){
+
+//         if (this.parentNode.classList.contains('open')) {
+//           closeOpenItems()
+//         } else {
+//           closeOpenItems()
+//           this.parentNode.classList.add('open');
+//           this.setAttribute('aria-expanded', 'true');
+//           this.nextElementSibling.style.display = 'block';
+//         }
+//         e.preventDefault();
+//       });
+//     });

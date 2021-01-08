@@ -1,6 +1,5 @@
 // colors
 
-
 $black: #000 !default;
 $near-black: #111 !default;
 $dark-grey: #333 !default;
@@ -165,6 +164,12 @@ $social-rss:                  #ee802f !default;
 .hover-bg-social-snapchat { background-color: $social-snapchat; }
 .hover-bg-social-skype { background-color: $social-skype; }
 .hover-bg-social-rss { background-color: $social-rss; }
+
+// border color
+
+.b--brand-primary { border-color: $brand-primary; }
+.b--brand-secondary { border-color: $brand-secondary; }
+.b--brand-tertiary { border-color: $brand-tertiary; }
 
 // fill
 
