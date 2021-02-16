@@ -1,19 +1,7 @@
 // colors
 
-$black: #000 !default;
-$near-black: #111 !default;
-$dark-grey: #333 !default;
-$mid-grey: #555 !default;
-$grey: #777 !default;
-$silver: #999 !default;
-$light-silver: #aaa !default;
-$moon-grey: #ccc !default;
-$light-grey: #eee !default;
-$near-white: #f4f4f4 !default;
-$white: #fff !default;
-
 $brand-primary:               #ffcb27 !default;
-$brand-secondary:             $dark-grey !default;
+$brand-secondary:             $dark-gray !default;
 $brand-tertiary:              $near-black !default;
 
 $brand-success:               #5cb85c !default;
@@ -33,18 +21,6 @@ $social-skype:            		#00aff0 !default;
 $social-rss:                  #ee802f !default;
 
 // color
-
-.black { color: $black; }
-.near-black { color: $near-black; }
-.dark-grey { color: $dark-grey; }
-.mid-grey { color: $mid-grey; }
-.grey { color: $grey; }
-.silver { color: $silver; }
-.light-silver { color: $light-silver; }
-.moon-grey { color: $moon-grey; }
-.light-grey { color: $light-grey; }
-.near-white { color: $near-white; }
-.white { color: $white; }
 
 .color-brand-primary { color: $brand-primary; }
 .color-brand-secondary { color: $brand-secondary; }
@@ -107,19 +83,6 @@ $social-rss:                  #ee802f !default;
 
 // background
 
-.bg-black { background-color: $black; }
-.bg-near-black { background-color: $near-black; }
-.bg-dark-grey { background-color: $dark-grey; }
-.bg-mid-grey { background-color: $mid-grey; }
-.bg-grey { background-color: $grey; }
-.bg-silver { background-color: $silver; }
-.bg-light-silver { background-color: $light-silver; }
-.bg-moon-grey { background-color: $moon-grey; }
-.bg-light-grey { background-color: $light-grey; }
-.bg-near-white { background-color: $near-white; }
-.bg-white { background-color: $white; }
-// .bg-transparent { background-color: $transparent; }
-
 .bg-brand-primary { background-color: $brand-primary; }
 .bg-brand-secondary { background-color: $brand-secondary; }
 .bg-brand-tertiary { background-color: $brand-tertiary; }
@@ -143,11 +106,11 @@ $social-rss:                  #ee802f !default;
 // hover background
 
 .hover-bg-brand-primary:hover,
-.hover-bg-brand-primary:focus { background-color: lighten($brand-primary, 8%); }
+.hover-bg-brand-primary:focus { background-color: lighten($brand-primary, 4%); }
 .hover-bg-brand-secondary:hover,
-.hover-bg-brand-secondary:focus { background-color: lighten($brand-secondary, 8%); }
+.hover-bg-brand-secondary:focus { background-color: lighten($brand-secondary, 4%); }
 .hover-bg-brand-tertiary:hover,
-.hover-bg-brand-tertiary:focus { background-color: lighten($brand-tertiary, 8%); }
+.hover-bg-brand-tertiary:focus { background-color: lighten($brand-tertiary, 4%); }
 
 .hover-bg-brand-success { background-color: $brand-success; }
 .hover-bg-brand-info { background-color: $brand-info; }
