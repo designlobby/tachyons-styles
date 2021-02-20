@@ -47,12 +47,12 @@ li {
 }
 
 a {
-  color: $brand-primary;
-  text-decoration: underline;
+  color: $link-color;
+  text-decoration: $link-decoration;
 
   &:hover {
-    color: darken($brand-primary, 15%);
-    text-decoration: none;
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
   }
 }
 

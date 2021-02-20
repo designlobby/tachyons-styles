@@ -34,6 +34,6 @@ $hover-text-color:                $dark-gray !default;
 $text-muted:                      $moon-gray !default;
 
 $link-color:                      $brand-primary !default;
-$link-decoration:                 none !default;
+$link-decoration:                 underline !default;
 $link-hover-color:                darken($link-color, 4%) !default;
-$link-hover-decoration:           underline !default;
+$link-hover-decoration:           none !default;
