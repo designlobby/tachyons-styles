@@ -131,12 +131,12 @@
       background-color: $brand-primary;
 
       &:hover {
-        background-color: $brand-primary--contrast;
+        background-color: $brand-secondary;
       }
 
       &:focus,
       &:active {
-        background-color: $brand-primary;
+        background-color: $brand-secondary;
       }
     }
   }
