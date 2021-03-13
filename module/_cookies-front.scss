@@ -5,9 +5,21 @@
   height: auto;
   min-width: 100%;
   font-size: 13px;
-  letter-spacing: 0;
   line-height: 20px;
+  letter-spacing: 0;
   text-align: center;
+}
+
+#cookie-notice.cn-animated {
+  -webkit-animation-duration: .5s !important;
+  animation-duration: .5s !important;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#cookie-notice.cn-animated.cn-effect-none {
+  -webkit-animation-duration: .001s !important;
+  animation-duration: .001s !important;
 }
 
 #cookie-notice .cookie-notice-container {
@@ -69,9 +81,9 @@
 .cn-close-icon::before,
 .cn-close-icon::after {
   position: absolute;
-  height: 15px;
-  width: 2px;
   top: 3px;
+  width: 2px;
+  height: 15px;
   background-color: $white;
   content: '';
 }
@@ -92,7 +104,140 @@
   margin-left: 10px;
 }
 
+.cn-button {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: .25px;
+  text-align: center;
+  text-shadow: none;
+  text-transform: none;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  touch-action: manipulation;
+}
+
+.cn-button:hover {
+  text-decoration: none;
+  box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.05);
+}
+
+.cn-text-container {
+  margin: 0 0 6px 0;
+}
+
 .cn-text-container,
 .cn-buttons-container {
   display: inline-block;
+}
+
+#cookie-notice.cookie-notice-visible.cn-effect-none,
+#cookie-notice.cookie-revoke-visible.cn-effect-none {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+#cookie-notice.cn-effect-none {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+#cookie-notice.cookie-notice-visible.cn-effect-fade,
+#cookie-notice.cookie-revoke-visible.cn-effect-fade {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+#cookie-notice.cn-effect-fade {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+#cookie-notice.cookie-notice-visible.cn-effect-slide,
+#cookie-notice.cookie-revoke-visible.cn-effect-slide{
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+#cookie-notice.cn-effect-slide {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown;
+}
+
+#cookie-notice.cookie-notice-visible.cn-position-top.cn-effect-slide,
+#cookie-notice.cookie-revoke-visible.cn-position-top.cn-effect-slide {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+#cookie-notice.cn-position-top.cn-effect-slide {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .cookie-notice-container #cn-notice-text {
+    display: block;
+  }
+
+  .cookie-notice-container #cn-notice-buttons {
+    display: block;
+  }
+
+  #cookie-notice .cn-button {
+    margin: 0 5px 5px 5px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .cookie-notice-container,
+  .cookie-revoke-container {
+    padding: 15px 25px;
+  }
 }
