@@ -32,7 +32,7 @@
     </li>
   @endoption
 
-  <@hasoption('social_instagram_url')
+  @hasoption('social_instagram_url')
     <li class="dib pa0 ma0 mr3 v-mid social-menu__item">
       <a href="@option('social_instagram_url')" rel="noopener norefferer" target="_blank" class="db">
         @svg('social--instagram', 'db')
