@@ -22,6 +22,9 @@
     Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
 
+.vis-h { visibility: hidden; }
+.vis-v { visibility: visible; }
+
 .clip {
   position: fixed !important;
   _position: absolute !important;
@@ -30,6 +33,8 @@
 }
 
 @media #{$breakpoint-not-small} {
+  .vis-h-ns { visibility: hidden; }
+  .vis-v-ns { visibility: visible; }
   .clip-ns {
     position: fixed !important;
     _position: absolute !important;
@@ -39,6 +44,8 @@
 }
 
 @media #{$breakpoint-tablet} {
+  .vis-h-t { visibility: hidden; }
+  .vis-v-t { visibility: visible; }
   .clip-t {
     position: fixed !important;
     _position: absolute !important;
@@ -48,6 +55,8 @@
 }
 
 @media #{$breakpoint-medium} {
+  .vis-h-m { visibility: hidden; }
+  .vis-v-m { visibility: visible; }
   .clip-m {
     position: fixed !important;
     _position: absolute !important;
@@ -57,6 +66,8 @@
 }
 
 @media #{$breakpoint-large} {
+  .vis-h-l { visibility: hidden; }
+  .vis-v-l { visibility: visible; }
   .clip-l {
     position: fixed !important;
     _position: absolute !important;

@@ -31,17 +31,19 @@
 
 */
 
-.dn {              display: none; }
-.di {              display: inline; }
-.db {              display: block; }
-.dib {             display: inline-block; }
-.dit {             display: inline-table; }
-.dt {              display: table; }
-.dtc {             display: table-cell; }
-.dt-row {          display: table-row; }
-.dt-row-group {    display: table-row-group; }
-.dt-column {       display: table-column; }
+.dn { display: none; }
+.di { display: inline; }
+.db { display: block; }
+.dib { display: inline-block; }
+.dit { display: inline-table; }
+.dt { display: table; }
+.dtc { display: table-cell; }
+.dt-row { display: table-row; }
+.dt-row-group { display: table-row-group; }
+.dt-column { display: table-column; }
 .dt-column-group { display: table-column-group; }
+.df { display: flex; }
+.dif { display: inline-flex; }
 
 /*
   This will set table to full width and then
@@ -64,6 +66,8 @@
   .dt-row-group-ns {    display: table-row-group; }
   .dt-column-ns {       display: table-column; }
   .dt-column-group-ns { display: table-column-group; }
+  .df-ns { display: flex; }
+  .dif-ns { display: inline-flex; }
 
   .dt--fixed-ns {
     table-layout: fixed;
@@ -83,6 +87,8 @@
   .dt-row-group-t {    display: table-row-group; }
   .dt-column-t {       display: table-column; }
   .dt-column-group-t { display: table-column-group; }
+  .df-t { display: flex; }
+  .dif-t { display: inline-flex; }
 
   .dt--fixed-t {
     table-layout: fixed;
@@ -102,6 +108,8 @@
   .dt-row-group-m {    display: table-row-group; }
   .dt-column-m {       display: table-column; }
   .dt-column-group-m { display: table-column-group; }
+  .df-m { display: flex; }
+  .dif-m { display: inline-flex; }
 
   .dt--fixed-m {
     table-layout: fixed;
@@ -121,10 +129,11 @@
   .dt-row-group-l {    display: table-row-group; }
   .dt-column-l {       display: table-column; }
   .dt-column-group-l { display: table-column-group; }
+  .df-l { display: flex; }
+  .dif-l{ display: inline-flex; }
 
   .dt--fixed-l {
     table-layout: fixed;
     width: 100%;
   }
 }
-

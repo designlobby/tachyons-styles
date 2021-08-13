@@ -16,9 +16,6 @@
 
 */
 
-.flex { display: flex; }
-.inline-flex { display: inline-flex; }
-
 /* 1. Fix for Chrome 44 bug.
  * https://code.google.com/p/chromium/issues/detail?id=506893 */
 .flex-auto {
@@ -87,8 +84,6 @@
 .flex-shrink-1 { flex-shrink: 1; }
 
 @media #{$breakpoint-not-small} {
-  .flex-ns { display: flex; }
-  .inline-flex-ns { display: inline-flex; }
   .flex-auto-ns {
     flex: 1 1 auto;
     min-width: 0; /* 1 */
@@ -146,8 +141,6 @@
 }
 
 @media #{$breakpoint-tablet} {
-  .flex-t { display: flex; }
-  .inline-flex-t { display: inline-flex; }
   .flex-auto-t {
     flex: 1 1 auto;
     min-width: 0; /* 1 */
@@ -205,8 +198,6 @@
 }
 
 @media #{$breakpoint-medium} {
-  .flex-m { display: flex; }
-  .inline-flex-m { display: inline-flex; }
   .flex-auto-m {
     flex: 1 1 auto;
     min-width: 0; /* 1 */
@@ -264,8 +255,6 @@
 }
 
 @media #{$breakpoint-large} {
-  .flex-l { display: flex; }
-  .inline-flex-l { display: inline-flex; }
   .flex-auto-l {
     flex: 1 1 auto;
     min-width: 0; /* 1 */

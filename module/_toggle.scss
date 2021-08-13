@@ -1,4 +1,14 @@
+// Hamburger animations from https://github.com/jonsuh/hamburgers
+
 #nav-toggle {
+  top: -2.5rem;
+  display: flex;
+  background: $brand-primary;
+  border-radius: 4px;
+
+  @media #{$breakpoint-tablet} {
+    display: none;
+  }
 
   &:hover {
     opacity: 1;

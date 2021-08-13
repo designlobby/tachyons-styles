@@ -1,39 +1,6 @@
-// Typography
-
-$font-family-sans-serif:         'proxima-nova',
-                                 -apple-system, BlinkMacSystemFont,
-                                 'avenir next', avenir,
-                                 'helvetica neue', helvetica,
-                                 ubuntu,
-                                 roboto, noto,
-                                 'segoe ui', arial,
-                                 sans-serif !default;
-
-$font-family-serif:               Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:           Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:                $font-family-sans-serif !default;
-
-$font-weight-light:               300 !default;
-$font-weight-normal:              400 !default;
-$font-weight-bold:                700 !default;
-
-$font-size-root:                  16px !default;
-$font-size-base:                  1rem !default;
-$font-size-lg:                    1.25rem !default; // 20px
-$font-size-sm:                    .875rem !default; // 14px
-$font-size-xs:                    .75rem !default; // 12px
-
-$headings-margin-bottom:          2rem !default;
-$headings-font-family:            $font-family-sans-serif !default;
-$headings-font-weight:            $font-weight-bold !default;
-$headings-line-height:            1.25 !default;
-$headings-font-color:             $brand-primary !default;
-
-$text-color:                      $dark-gray !default;
-$hover-text-color:                $dark-gray !default;
-$text-muted:                      $moon-gray !default;
-
-$link-color:                      $brand-primary !default;
-$link-decoration:                 underline !default;
-$link-hover-color:                darken($link-color, 4%) !default;
-$link-hover-decoration:           none !default;
+$html-font-size:                 18px !default;
+$headings-color:                 $brand-quinary !default;
+$text-color:                     $brand-black !default;
+$link-color:                     $brand-secondary !default;
+$link-decoration:                underline !default;
+$link-hover-decoration:          none !default;

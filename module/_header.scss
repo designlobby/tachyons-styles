@@ -1,2 +1,35 @@
 @include b(header) {
 }
+
+
+// <div class="w-100 pv2 ph3 ph4-t gr--tertiary-quinary">
+//   <div class="df items-center justify-end center">
+//     <a href="#content" class="screen-reader-text">Skip navigation</a>
+//     <span class="f7 fw6 white">Telephone:&nbsp;</span>
+//     <a href="tel:@php echo str_replace(' ', '', get_field('telephone', 'option')); @endphp" aria-label="telephone. @php echo trim(chunk_split(get_field('telephone', 'option'), 1, ' ')); @endphp." class="mr3 sans-serif f7 fw6 white hover-white no-underline underline-hover">
+//       @option('telephone')
+//     </a>
+//     <span class="f7 fw6 white">Email:&nbsp;</span>
+//     <a href="mailto:@option('email')" class="mr3 sans-serif f7 fw6 white hover-white no-underline underline-hover">
+//       @option('email')
+//     </a>
+//     @include('partials.social')
+//   </div>
+// </div>
+
+// <header class="df flex-wrap items-center w-100 pv4 ph3 ph4-t center" role="banner">
+//   <a href="{{ home_url('/') }}" class="dib mr3 brand brand--header" aria-label="{{ get_bloginfo('name', 'display') }}">
+//     @svg('brand-id--landscape', 'db')
+//   </a>
+//   <nav id="navigation" class="relative db dib-t w-100 w-auto-t ml-auto">
+//     <button id="nav-toggle" class="absolute right-0 flex-row items-center bg-brand-quinary hamburger hamburger--squeeze" type="button" aria-label="Menu" role="button" aria-controls="navigation">
+//       <span class="dib mr2 white lh-solid hamburger-label">Menu</span>
+//       <span class="dib hamburger-box">
+//         <span class="hamburger-inner"></span>
+//       </span>
+//     </button>
+//     @if (has_nav_menu('primary_navigation'))
+//       {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_id' => 'primary-nav', 'menu_class' => 'dn df-t pa0 pt4 pt0-t ma0 list primary-navigation']) !!}
+//     @endif
+//   </nav>
+// </header>

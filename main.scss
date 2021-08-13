@@ -1,13 +1,17 @@
+// placeholders
+
+@import 'config/placeholders/bg';
+@import 'config/placeholders/center';
+
 // custom tachyons
 
 @import 'tachyons-sass/tachyons';
 
 // variables
 
-@import 'config/variables/media-queries';
 @import 'config/variables/colours';
 @import 'config/variables/typography';
-@import 'config/variables/navigation';
+@import 'config/variables/hamburger';
 
 /** Import everything from autoload */
 @import './autoload/**/*';
@@ -19,11 +23,6 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import '~some-node-module';
-
-// placeholders
-
-@import 'config/placeholders/bg';
-@import 'config/placeholders/center';
 
 // config
 
@@ -48,22 +47,18 @@
 
 @import 'module/header';
 @import 'module/main';
-@import 'module/sidebar';
 @import 'module/footer';
-@import 'module/cookies-front';
-@import 'module/cookies';
 
 @import 'module/brand';
 @import 'module/navigation';
 @import 'module/toggle';
-@import 'module/buttons';
 @import 'module/forms';
 @import 'module/form-search';
 // @import 'module/social';
 
 // helpers
 
-@import 'helpers/utilities';
+// @import 'helpers/utilities';
 // @import 'helpers/tinymce';
 // @import 'helpers/wordpress';
 
