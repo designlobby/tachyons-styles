@@ -93,7 +93,7 @@
  * even if you are using background-size: cover */
 
 .grow {
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: greyscale;
   backface-visibility: hidden;
   transform: translateZ(0);
   // transition: transform 0.25s ease-out;
@@ -109,7 +109,7 @@
 }
 
 .grow-large {
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: greyscale;
   backface-visibility: hidden;
   transform: translateZ(0);
   // transition: transform .25s ease-in-out;

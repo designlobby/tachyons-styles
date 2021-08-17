@@ -1,0 +1,49 @@
+// https://github.com/tachyons-css/tachyons/pull/567/files
+
+/*
+   OBJECT FIT
+   Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+    Base:
+    ob = object
+    Modifiers:
+    -cover = cover
+    -contain = contain
+    -fill = fill
+    Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+*/
+
+.ob-cover { object-fit: cover !important; }
+.ob-contain { object-fit: contain !important; }
+.ob-fill { object-fit: fill !important; }
+.ob-none { object-fit: none !important; }
+
+@media #{$breakpoint-not-small} {
+  .ob-cover-ns { object-fit: cover !important; }
+  .ob-contain-ns { object-fit: contain !important; }
+  .ob-fill-ns { object-fit: fill !important; }
+  .ob-none-ns { object-fit: none !important; }
+}
+
+@media #{$breakpoint-tablet} {
+  .ob-cover-t { object-fit: cover !important; }
+  .ob-contain-t { object-fit: contain !important; }
+  .ob-fill-t { object-fit: fill !important; }
+  .ob-none-t { object-fit: none !important; }
+}
+
+@media #{$breakpoint-medium} {
+  .ob-cover-m { object-fit: cover important; }
+  .ob-contain-m { object-fit: contain !important; }
+  .ob-fill-m { object-fit: fill !important; }
+  .ob-none-ns { object-fit: none !important; }
+}
+
+@media #{$breakpoint-large} {
+  .ob-cover-l { object-fit: cover!important; }
+  .ob-contain-l { object-fit: contain!important; }
+  .ob-fill-l { object-fit: fill!important; }
+  .ob-none-l { object-fit: none !important; }
+}
