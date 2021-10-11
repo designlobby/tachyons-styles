@@ -6,6 +6,23 @@
   background: $brand-primary;
 }
 
+
+// Native scrolling - to do: requires polyfill for safari
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Native scrolling offset
+// https://spigotdesign.com/smooth-scroll-offset-anchor-links-with-css/#smooth-scroll
+
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+}
+
 // Responsive images by default
 
 img {
