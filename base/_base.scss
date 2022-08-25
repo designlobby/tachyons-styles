@@ -17,15 +17,16 @@ html {
 // https://spigotdesign.com/smooth-scroll-offset-anchor-links-with-css/#smooth-scroll
 
 :target:before {
-  content: "";
   display: block;
   height: 100px;
   margin: -100px 0 0;
+  content: '';
 }
 
 // Responsive images by default
 
-img {
+img,
+svg {
   height: auto;
   max-width: 100%;
 }
